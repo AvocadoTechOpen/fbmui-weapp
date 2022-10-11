@@ -2,7 +2,7 @@
   <img alt="logo" src="https://hr.fbmms.cn/assets/images/a37f97b18691a2fec277.png" width="60">
 </p>
 
-<h3 align="center">轻量、可靠的小程序 UI 组件库</h3>
+<h3 align="center">小程序 UI 组件库</h3>
 
 <p align="center">
   🌈 <a href="https://AvocadoTechOpen.github.io/fbmui-weapp">文档网站（GitHub）</a>

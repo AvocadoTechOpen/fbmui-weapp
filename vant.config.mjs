@@ -9,17 +9,11 @@ export default {
   site: {
     versions: [],
     title: 'Fbmui Weapp',
-    description: '轻量、可靠的小程序 UI 组件库',
+    description: '小程序 UI 组件库',
     logo: 'https://hr.fbmms.cn/favicon.ico',
     simulator: {
-      url: '',
-      routeMapper: (path) => {
-        const map = {
-          '/common': '/style',
-          '/transition': '/style',
-        };
-        return `/zh-CN${map[path] || path}`;
-      },
+      url: 'https://github.com/AvocadoTechOpen/fbmui-weapp/mobile.html',
+      routeMapper: (path) => `/${path}`,
       syncPathFromSimulator: false,
     },
     links: [
@@ -29,7 +23,7 @@ export default {
       },
     ],
     baiduAnalytics: {
-      seed: 'af5d41bc4e446e76665dbe3ec18d55c3',
+      seed: '',
     },
     nav: [
       {

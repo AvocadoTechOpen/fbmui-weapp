@@ -2,7 +2,7 @@
   <div class="van-doc-intro">
     <img alt="logo" src="https://hr.fbmms.cn/assets/images/a37f97b18691a2fec277.png" width="60">
     <h2 style="margin: 0; font-size: 32px; line-height: 60px;">Fbmui Weapp</h2>
-    <p>轻量、可靠的小程序 UI 组件库</p>
+    <p>小程序 UI 组件库</p>
   </div>
 </div>
 

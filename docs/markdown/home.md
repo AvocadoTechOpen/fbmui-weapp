@@ -25,6 +25,7 @@
 小程序已经支持使用 npm 安装第三方包，详见 [npm 支持](https://developers.weixin.qq.com/miniprogram/dev/devtools/npm.html?search-key=npm)
 
 ```bash
+
 # 通过 npm 安装
 npm i fbmui-weapp -S --production
 

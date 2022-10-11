@@ -1,7 +1,6 @@
 import { getAllRect } from '../common/utils';
 import { VantComponent } from '../common/component';
 import { canIUseModel } from '../common/version';
-
 VantComponent({
     field: true,
     classes: ['icon-class'],
@@ -71,7 +70,7 @@ VantComponent({
                     .sort((cur, next) => cur.dataset.score - next.dataset.score)
                     .find((item) => clientX >= item.left && clientX <= item.right);
                 if (target != null) {
-                    this.onSelect({...event, currentTarget: target});
+                    this.onSelect(Object.assign(Object.assign({}, event), { currentTarget: target }));
                 }
             });
         },

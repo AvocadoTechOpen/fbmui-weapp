@@ -2,9 +2,8 @@ import { VantComponent } from '../common/component';
 import { isImageFile, chooseFile, isVideoFile } from './utils';
 import { chooseImageProps, chooseVideoProps } from './shared';
 import { isBoolean, isPromise } from '../common/validator';
-
 VantComponent({
-    props: {disabled: Boolean, multiple: Boolean, uploadText: String, useBeforeRead: Boolean, afterRead: null, beforeRead: null, previewSize: {
+    props: Object.assign(Object.assign({ disabled: Boolean, multiple: Boolean, uploadText: String, useBeforeRead: Boolean, afterRead: null, beforeRead: null, previewSize: {
             type: null,
             value: 80,
         }, name: {
@@ -41,7 +40,7 @@ VantComponent({
         }, uploadIcon: {
             type: String,
             value: 'photograph',
-        }, ...chooseImageProps, ...chooseVideoProps},
+        } }, chooseImageProps), chooseVideoProps),
     data: {
         lists: [],
         isInCount: true,
@@ -49,7 +48,7 @@ VantComponent({
     methods: {
         formatFileList() {
             const { fileList = [], maxCount } = this.data;
-            const lists = fileList.map((item) => ({...item, isImage: isImageFile(item), isVideo: isVideoFile(item), deletable: isBoolean(item.deletable) ? item.deletable : true}));
+            const lists = fileList.map((item) => (Object.assign(Object.assign({}, item), { isImage: isImageFile(item), isVideo: isVideoFile(item), deletable: isBoolean(item.deletable) ? item.deletable : true })));
             this.setData({ lists, isInCount: lists.length < maxCount });
         },
         getDetail(index) {
@@ -62,7 +61,7 @@ VantComponent({
             const { maxCount, multiple, lists, disabled } = this.data;
             if (disabled)
                 return;
-            chooseFile({...this.data, maxCount: maxCount - lists.length})
+            chooseFile(Object.assign(Object.assign({}, this.data), { maxCount: maxCount - lists.length }))
                 .then((res) => {
                 this.onBeforeRead(multiple ? res : res[0]);
             })
@@ -78,9 +77,9 @@ VantComponent({
             }
             if (useBeforeRead) {
                 res = new Promise((resolve, reject) => {
-                    this.$emit('before-read', {file, ...this.getDetail(), callback: (ok) => {
+                    this.$emit('before-read', Object.assign(Object.assign({ file }, this.getDetail()), { callback: (ok) => {
                             ok ? resolve() : reject();
-                        }});
+                        } }));
                 });
             }
             if (!res) {
@@ -99,17 +98,17 @@ VantComponent({
                 ? file.some((item) => item.size > maxSize)
                 : file.size > maxSize;
             if (oversize) {
-                this.$emit('oversize', {file, ...this.getDetail()});
+                this.$emit('oversize', Object.assign({ file }, this.getDetail()));
                 return;
             }
             if (typeof afterRead === 'function') {
                 afterRead(file, this.getDetail());
             }
-            this.$emit('after-read', {file, ...this.getDetail()});
+            this.$emit('after-read', Object.assign({ file }, this.getDetail()));
         },
         deleteItem(event) {
             const { index } = event.currentTarget.dataset;
-            this.$emit('delete', {...this.getDetail(index), file: this.data.fileList[index]});
+            this.$emit('delete', Object.assign(Object.assign({}, this.getDetail(index)), { file: this.data.fileList[index] }));
         },
         onPreviewImage(event) {
             if (!this.data.previewFullImage)
@@ -133,7 +132,7 @@ VantComponent({
             wx.previewMedia({
                 sources: lists
                     .filter((item) => isVideoFile(item))
-                    .map((item) => ({...item, type: 'video'})),
+                    .map((item) => (Object.assign(Object.assign({}, item), { type: 'video' }))),
                 current: index,
                 fail() {
                     wx.showToast({ title: '预览视频失败', icon: 'none' });
@@ -150,7 +149,7 @@ VantComponent({
         onClickPreview(event) {
             const { index } = event.currentTarget.dataset;
             const item = this.data.lists[index];
-            this.$emit('click-preview', {...item, ...this.getDetail(index)});
+            this.$emit('click-preview', Object.assign(Object.assign({}, item), this.getDetail(index)));
         },
     },
 });

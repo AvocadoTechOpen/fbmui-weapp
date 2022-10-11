@@ -4,7 +4,6 @@ import { getSystemInfoSync } from '../common/utils';
 import { isObj } from '../common/validator';
 import { canIUseCanvas2d } from '../common/version';
 import { adaptor } from './canvas';
-
 function format(rate) {
     return Math.min(Math.max(rate, 0), 100);
 }

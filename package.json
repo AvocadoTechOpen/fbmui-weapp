@@ -65,5 +65,8 @@
     "Chrome >= 53",
     "ChromeAndroid >= 53",
     "iOS >= 9"
-  ]
+  ],
+  "dependencies": {
+    "@vant/icons": "^1.8.0"
+  }
 }

@@ -1,6 +1,5 @@
 import { VantComponent } from '../common/component';
 import { useParent } from '../common/relation';
-
 VantComponent({
     props: {
         info: null,

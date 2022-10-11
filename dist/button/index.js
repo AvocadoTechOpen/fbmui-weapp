@@ -1,7 +1,6 @@
 import { VantComponent } from '../common/component';
 import { button } from '../mixins/button';
 import { canIUseFormFieldButton } from '../common/version';
-
 const mixins = [button];
 if (canIUseFormFieldButton()) {
     mixins.push('wx://form-field-button');
@@ -50,7 +49,7 @@ VantComponent({
     methods: {
         onClick(event) {
             this.$emit('click', event);
-            const { canIUseGetUserProfile, openType, getUserProfileDesc, lang, } = this.data;
+            const { canIUseGetUserProfile, openType, getUserProfileDesc, lang } = this.data;
             if (openType === 'getUserInfo' && canIUseGetUserProfile) {
                 wx.getUserProfile({
                     desc: getUserProfileDesc || '  ',

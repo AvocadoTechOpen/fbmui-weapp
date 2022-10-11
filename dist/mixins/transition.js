@@ -1,7 +1,6 @@
 // @ts-nocheck
 import { requestAnimationFrame } from '../common/utils';
 import { isObj } from '../common/validator';
-
 const getClassNames = (name) => ({
     enter: `fbm-${name}-enter fbm-${name}-enter-active enter-class enter-active-class`,
     'enter-to': `fbm-${name}-enter-to fbm-${name}-enter-active enter-to-class enter-active-class`,

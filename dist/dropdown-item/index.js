@@ -1,6 +1,5 @@
 import { useParent } from '../common/relation';
 import { VantComponent } from '../common/component';
-
 VantComponent({
     field: true,
     relation: useParent('dropdown-menu', function () {
@@ -36,7 +35,7 @@ VantComponent({
     methods: {
         rerender() {
             wx.nextTick(() => {
-                let _a;
+                var _a;
                 (_a = this.parent) === null || _a === void 0 ? void 0 : _a.updateItemListData();
             });
         },
@@ -77,7 +76,7 @@ VantComponent({
             }
         },
         toggle(show, options = {}) {
-            let _a;
+            var _a;
             const { showPopup } = this.data;
             if (typeof show !== 'boolean') {
                 show = !showPopup;

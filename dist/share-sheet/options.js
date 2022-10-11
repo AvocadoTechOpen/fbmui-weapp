@@ -1,5 +1,4 @@
 import { VantComponent } from '../common/component';
-
 VantComponent({
     props: {
         options: Array,
@@ -9,7 +8,7 @@ VantComponent({
         onSelect(event) {
             const { index } = event.currentTarget.dataset;
             const option = this.data.options[index];
-            this.$emit('select', {...option, index});
+            this.$emit('select', Object.assign(Object.assign({}, option), { index }));
         },
     },
 });

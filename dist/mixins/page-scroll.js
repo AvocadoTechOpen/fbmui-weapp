@@ -1,5 +1,4 @@
 import { getCurrentPage, isDef } from '../common/utils';
-
 function onPageScroll(event) {
     const { vanPageScroller = [] } = getCurrentPage();
     vanPageScroller.forEach((scroller) => {
@@ -27,7 +26,7 @@ export const pageScrollMixin = (scroller) => Behavior({
         page.onPageScroll = onPageScroll;
     },
     detached() {
-        let _a;
+        var _a;
         const page = getCurrentPage();
         if (isDef(page)) {
             page.vanPageScroller =

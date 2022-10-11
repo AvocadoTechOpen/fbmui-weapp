@@ -1,5 +1,4 @@
 import { isObj } from '../common/validator';
-
 const defaultOptions = {
     type: 'text',
     mask: false,
@@ -13,7 +12,7 @@ const defaultOptions = {
     selector: '#fbm-toast',
 };
 let queue = [];
-let currentOptions = { ...defaultOptions};
+let currentOptions = Object.assign({}, defaultOptions);
 function parseOptions(message) {
     return isObj(message) ? message : { message };
 }
@@ -22,7 +21,7 @@ function getContext() {
     return pages[pages.length - 1];
 }
 function Toast(toastOptions) {
-    const options = {...currentOptions, ...parseOptions(toastOptions)};
+    const options = Object.assign(Object.assign({}, currentOptions), parseOptions(toastOptions));
     const context = (typeof options.context === 'function'
         ? options.context()
         : options.context) || getContext();
@@ -50,7 +49,7 @@ function Toast(toastOptions) {
     }
     return toast;
 }
-const createMethod = (type) => (options) => Toast({type, ...parseOptions(options)});
+const createMethod = (type) => (options) => Toast(Object.assign({ type }, parseOptions(options)));
 Toast.loading = createMethod('loading');
 Toast.success = createMethod('success');
 Toast.fail = createMethod('fail');
@@ -64,6 +63,6 @@ Toast.setDefaultOptions = (options) => {
     Object.assign(currentOptions, options);
 };
 Toast.resetDefaultOptions = () => {
-    currentOptions = { ...defaultOptions};
+    currentOptions = Object.assign({}, defaultOptions);
 };
 export default Toast;

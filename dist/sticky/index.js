@@ -2,7 +2,6 @@ import { getRect } from '../common/utils';
 import { VantComponent } from '../common/component';
 import { isDef } from '../common/validator';
 import { pageScrollMixin } from '../mixins/page-scroll';
-
 const ROOT_ELEMENT = '.fbm-sticky';
 VantComponent({
     props: {

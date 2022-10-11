@@ -1,6 +1,5 @@
 import { pickExclude } from '../common/utils';
 import { isImageUrl, isVideoUrl } from '../common/validator';
-
 export function isImageFile(item) {
     if (item.isImage != null) {
         return item.isImage;
@@ -26,18 +25,18 @@ export function isVideoFile(item) {
     return false;
 }
 function formatImage(res) {
-    return res.tempFiles.map((item) => ({...pickExclude(item, ['path']), type: 'image', url: item.path, thumb: item.path}));
+    return res.tempFiles.map((item) => (Object.assign(Object.assign({}, pickExclude(item, ['path'])), { type: 'image', url: item.path, thumb: item.path })));
 }
 function formatVideo(res) {
     return [
-        {...pickExclude(res, ['tempFilePath', 'thumbTempFilePath', 'errMsg']), type: 'video', url: res.tempFilePath, thumb: res.thumbTempFilePath},
+        Object.assign(Object.assign({}, pickExclude(res, ['tempFilePath', 'thumbTempFilePath', 'errMsg'])), { type: 'video', url: res.tempFilePath, thumb: res.thumbTempFilePath }),
     ];
 }
 function formatMedia(res) {
-    return res.tempFiles.map((item) => ({...pickExclude(item, ['fileType', 'thumbTempFilePath', 'tempFilePath']), type: res.type, url: item.tempFilePath, thumb: res.type === 'video' ? item.thumbTempFilePath : item.tempFilePath}));
+    return res.tempFiles.map((item) => (Object.assign(Object.assign({}, pickExclude(item, ['fileType', 'thumbTempFilePath', 'tempFilePath'])), { type: res.type, url: item.tempFilePath, thumb: res.type === 'video' ? item.thumbTempFilePath : item.tempFilePath })));
 }
 function formatFile(res) {
-    return res.tempFiles.map((item) => ({...pickExclude(item, ['path']), url: item.path}));
+    return res.tempFiles.map((item) => (Object.assign(Object.assign({}, pickExclude(item, ['path'])), { url: item.path })));
 }
 export function chooseFile({ accept, multiple, capture, compressed, maxDuration, sizeType, camera, maxCount, }) {
     return new Promise((resolve, reject) => {

@@ -22,22 +22,22 @@ const defaultOptions = {
     closeOnClickOverlay: false,
     confirmButtonOpenType: '',
 };
-let currentOptions = { ...defaultOptions};
+let currentOptions = Object.assign({}, defaultOptions);
 function getContext() {
     const pages = getCurrentPages();
     return pages[pages.length - 1];
 }
 const Dialog = (options) => {
-    options = {...currentOptions, ...options};
+    options = Object.assign(Object.assign({}, currentOptions), options);
     return new Promise((resolve, reject) => {
         const context = options.context || getContext();
         const dialog = context.selectComponent(options.selector);
         delete options.context;
         delete options.selector;
         if (dialog) {
-            dialog.setData({callback: (action, instance) => {
+            dialog.setData(Object.assign({ callback: (action, instance) => {
                     action === 'confirm' ? resolve(instance) : reject(instance);
-                }, ...options});
+                } }, options));
             wx.nextTick(() => {
                 dialog.setData({ show: true });
             });
@@ -49,7 +49,7 @@ const Dialog = (options) => {
     });
 };
 Dialog.alert = (options) => Dialog(options);
-Dialog.confirm = (options) => Dialog({showCancelButton: true, ...options});
+Dialog.confirm = (options) => Dialog(Object.assign({ showCancelButton: true }, options));
 Dialog.close = () => {
     queue.forEach((dialog) => {
         dialog.close();
@@ -64,11 +64,11 @@ Dialog.stopLoading = () => {
 Dialog.currentOptions = currentOptions;
 Dialog.defaultOptions = defaultOptions;
 Dialog.setDefaultOptions = (options) => {
-    currentOptions = {...currentOptions, ...options};
+    currentOptions = Object.assign(Object.assign({}, currentOptions), options);
     Dialog.currentOptions = currentOptions;
 };
 Dialog.resetDefaultOptions = () => {
-    currentOptions = { ...defaultOptions};
+    currentOptions = Object.assign({}, defaultOptions);
     Dialog.currentOptions = currentOptions;
 };
 Dialog.resetDefaultOptions();

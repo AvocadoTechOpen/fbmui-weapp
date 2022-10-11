@@ -22,7 +22,7 @@ export function useParent(name, onEffect) {
                 });
                 Object.defineProperty(this, 'index', {
                     // @ts-ignore
-                    get: () => { let _a; let _b; return (_b = (_a = this.parent) === null || _a === void 0 ? void 0 : _a.children) === null || _b === void 0 ? void 0 : _b.indexOf(this); },
+                    get: () => { var _a, _b; return (_b = (_a = this.parent) === null || _a === void 0 ? void 0 : _a.children) === null || _b === void 0 ? void 0 : _b.indexOf(this); },
                 });
             },
         }),

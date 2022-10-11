@@ -1,11 +1,10 @@
 import { VantComponent } from '../common/component';
 import { pickerProps } from '../picker/shared';
 import { requestAnimationFrame } from '../common/utils';
-
 const EMPTY_CODE = '000000';
 VantComponent({
     classes: ['active-class', 'toolbar-class', 'column-class'],
-    props: {...pickerProps, showToolbar: {
+    props: Object.assign(Object.assign({}, pickerProps), { showToolbar: {
             type: Boolean,
             value: true,
         }, value: {
@@ -32,7 +31,7 @@ VantComponent({
                     },
                 });
             },
-        }},
+        } }),
     data: {
         columns: [{ values: [] }, { values: [] }, { values: [] }],
         typeToColumnsPlaceholder: {},
@@ -68,13 +67,13 @@ VantComponent({
             return values.map((value, index) => {
                 if (value &&
                     (!value.code || value.name === columnsPlaceholder[index])) {
-                    return {...value, code: '', name: ''};
+                    return Object.assign(Object.assign({}, value), { code: '', name: '' });
                 }
                 return value;
             });
         },
         onChange(event) {
-            let _a;
+            var _a;
             const { index, picker, value } = event.detail;
             this.code = value[index].code;
             (_a = this.setValues()) === null || _a === void 0 ? void 0 : _a.then(() => {

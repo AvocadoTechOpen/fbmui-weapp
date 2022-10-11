@@ -2,7 +2,6 @@ import { VantComponent } from '../common/component';
 import { ROW_HEIGHT, getPrevDay, getNextDay, getToday, compareDay, copyDates, calcDateNum, formatMonthTitle, compareMonth, getMonths, getDayByOffset, } from './utils';
 import Toast from '../toast/toast';
 import { requestAnimationFrame } from '../common/utils';
-
 const initialMinDate = getToday().getTime();
 const initialMaxDate = (() => {
     const now = getToday();

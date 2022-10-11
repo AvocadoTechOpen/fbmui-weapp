@@ -1,9 +1,8 @@
 import { VantComponent } from '../common/component';
 import { pickerProps } from './shared';
-
 VantComponent({
     classes: ['active-class', 'toolbar-class', 'column-class'],
-    props: {...pickerProps, valueKey: {
+    props: Object.assign(Object.assign({}, pickerProps), { valueKey: {
             type: String,
             value: 'text',
         }, toolbarPosition: {
@@ -21,7 +20,7 @@ VantComponent({
                     this.setColumns().catch(() => { });
                 }
             },
-        }},
+        } }),
     beforeCreate() {
         Object.defineProperty(this, 'children', {
             get: () => this.selectAllComponents('.fbm-picker__column') || [],

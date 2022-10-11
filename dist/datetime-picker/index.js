@@ -1,7 +1,6 @@
 import { VantComponent } from '../common/component';
 import { isDef } from '../common/validator';
 import { pickerProps } from '../picker/shared';
-
 const currentYear = new Date().getFullYear();
 function isValidDate(date) {
     return isDef(date) && !isNaN(new Date(date).getTime());
@@ -35,7 +34,7 @@ function getMonthEndDay(year, month) {
 const defaultFormatter = (type, value) => value;
 VantComponent({
     classes: ['active-class', 'toolbar-class', 'column-class'],
-    props: {...pickerProps, value: {
+    props: Object.assign(Object.assign({}, pickerProps), { value: {
             type: null,
             observer: 'updateValue',
         }, filter: null, type: {
@@ -72,7 +71,7 @@ VantComponent({
             type: Number,
             value: 59,
             observer: 'updateValue',
-        }},
+        } }),
     data: {
         innerValue: Date.now(),
         columns: [],
@@ -132,8 +131,8 @@ VantComponent({
                     },
                 ];
             }
-            const { maxYear, maxDate, maxMonth, maxHour, maxMinute, } = this.getBoundary('max', data.innerValue);
-            const { minYear, minDate, minMonth, minHour, minMinute, } = this.getBoundary('min', data.innerValue);
+            const { maxYear, maxDate, maxMonth, maxHour, maxMinute } = this.getBoundary('max', data.innerValue);
+            const { minYear, minDate, minMonth, minHour, minMinute } = this.getBoundary('min', data.innerValue);
             const result = [
                 {
                     type: 'year',

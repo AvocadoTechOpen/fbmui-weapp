@@ -1,11 +1,10 @@
 import { nextTick } from '../common/utils';
 import { VantComponent } from '../common/component';
 import { commonProps, inputProps, textareaProps } from './props';
-
 VantComponent({
     field: true,
     classes: ['input-class', 'right-icon-class', 'label-class'],
-    props: {...commonProps, ...inputProps, ...textareaProps, size: String, icon: String, label: String, error: Boolean, center: Boolean, isLink: Boolean, leftIcon: String, rightIcon: String, autosize: null, required: Boolean, iconClass: String, clickable: Boolean, inputAlign: String, customStyle: String, errorMessage: String, arrowDirection: String, showWordLimit: Boolean, errorMessageAlign: String, readonly: {
+    props: Object.assign(Object.assign(Object.assign(Object.assign({}, commonProps), inputProps), textareaProps), { size: String, icon: String, label: String, error: Boolean, center: Boolean, isLink: Boolean, leftIcon: String, rightIcon: String, autosize: null, required: Boolean, iconClass: String, clickable: Boolean, inputAlign: String, customStyle: String, errorMessage: String, arrowDirection: String, showWordLimit: Boolean, errorMessageAlign: String, readonly: {
             type: Boolean,
             observer: 'setShowClear',
         }, clearable: {
@@ -23,7 +22,7 @@ VantComponent({
         }, clearIcon: {
             type: String,
             value: 'clear',
-        }},
+        } }),
     data: {
         focused: false,
         innerValue: '',

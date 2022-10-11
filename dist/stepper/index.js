@@ -1,6 +1,5 @@
 import { VantComponent } from '../common/component';
 import { isDef } from '../common/validator';
-
 const LONG_PRESS_START_TIME = 600;
 const LONG_PRESS_INTERVAL = 200;
 // add num and avoid float number
@@ -86,7 +85,7 @@ VantComponent({
             }
         },
         isDisabled(type) {
-            const { disabled, disablePlus, disableMinus, currentValue, max, min, } = this.data;
+            const { disabled, disablePlus, disableMinus, currentValue, max, min } = this.data;
             if (type === 'plus') {
                 return disabled || disablePlus || currentValue >= max;
             }
@@ -98,7 +97,7 @@ VantComponent({
         onBlur(event) {
             const value = this.format(event.detail.value);
             this.emitChange(value);
-            this.$emit('blur', {...event.detail, value});
+            this.$emit('blur', Object.assign(Object.assign({}, event.detail), { value }));
         },
         // filter illegal characters
         filter(value) {

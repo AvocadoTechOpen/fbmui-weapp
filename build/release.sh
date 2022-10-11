@@ -19,7 +19,7 @@ then
   npm version $VERSION --message "release: $VERSION"
 
   # publish
-  git push origin dev
+  git push origin main
   git push origin refs/tags/v$VERSION
 
   if [[ $VERSION =~ [beta] ]]

@@ -10,9 +10,9 @@
 
 扫描下方小程序二维码，体验组件库示例：
 
-<img src="https://img.yzcdn.cn/fbmui-weapp/qrcode-201808101114.jpg" width="200" height="200" style="margin-top: 10px;" >
+<img src="https://webcdn.fbmms.cn/assets/UR6m/eslhezwTZACy1Pp85rCLf" width="200" height="200" style="margin-top: 10px;width:200px;" >
 
-> Tips: 为了便于预览组件效果，本文档的右侧内嵌了 H5 版的 Vant 页面作为参考。在实际使用中，个别组件的表现可能与小程序上的表现有差异，请以实际效果为准。
+<!-- > Tips: 为了便于预览组件效果，本文档的右侧内嵌了 H5 版的 Vant 页面作为参考。在实际使用中，个别组件的表现可能与小程序上的表现有差异，请以实际效果为准。 -->
 
 ### 使用之前
 
@@ -31,8 +31,6 @@ npm i fbmui-weapp -S --production
 # 通过 yarn 安装
 yarn add fbmui-weapp --production
 
-# 安装 0.x 版本
-npm i fbmui-weapp -S --production
 ```
 
 #### 方式二. 下载代码

@@ -1,0 +1,281 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render demo and match snapshot 1`] = `
+<main>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix "
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        基础用法
+      </wx-view>
+      <wx-view
+        class="demo-block__card"
+      >
+        <fbm-cell
+          data-type="basic"
+          bind:click="onShowShareSheet"
+        >
+          <wx-view
+            class="custom-class fbm-cell fbm-cell--clickable"
+            hoverClass="fbm-cell--hover hover-class"
+            hoverStayTime="70"
+            style=""
+            bind:tap="onClick"
+          >
+            <wx-view
+              class="fbm-cell__title title-class"
+              style=""
+            >
+              显示分享面板
+            </wx-view>
+            <wx-view
+              class="fbm-cell__value value-class"
+            />
+            <van-icon
+              class="fbm-cell__right-icon-wrap right-icon-class"
+              customClass="fbm-cell__right-icon"
+            >
+              <wx-view
+                class="custom-class van-icon van-icon-arrow"
+                style=""
+                bind:tap="onClick"
+              />
+            </van-icon>
+          </wx-view>
+        </fbm-cell>
+        <fbm-share-sheet
+          bind:close="onClose"
+          bind:select="onSelect"
+        >
+          <fbm-popup
+            class="fbm-share-sheet"
+            bind:click-overlay="onClickOverlay"
+            bind:close="onClose"
+          >
+            <fbm-overlay
+              bind:click="onClickOverlay"
+            >
+              <fbm-transition
+                customClass="fbm-overlay"
+                bind:tap="onClick"
+                catch:touchmove="noop"
+              />
+            </fbm-overlay>
+          </fbm-popup>
+        </fbm-share-sheet>
+      </wx-view>
+    </wx-view>
+  </demo-block>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix "
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        展示多行选项
+      </wx-view>
+      <wx-view
+        class="demo-block__card"
+      >
+        <fbm-cell
+          data-type="multiLine"
+          bind:click="onShowShareSheet"
+        >
+          <wx-view
+            class="custom-class fbm-cell fbm-cell--clickable"
+            hoverClass="fbm-cell--hover hover-class"
+            hoverStayTime="70"
+            style=""
+            bind:tap="onClick"
+          >
+            <wx-view
+              class="fbm-cell__title title-class"
+              style=""
+            >
+              显示分享面板
+            </wx-view>
+            <wx-view
+              class="fbm-cell__value value-class"
+            />
+            <van-icon
+              class="fbm-cell__right-icon-wrap right-icon-class"
+              customClass="fbm-cell__right-icon"
+            >
+              <wx-view
+                class="custom-class van-icon van-icon-arrow"
+                style=""
+                bind:tap="onClick"
+              />
+            </van-icon>
+          </wx-view>
+        </fbm-cell>
+        <fbm-share-sheet
+          bind:close="onClose"
+          bind:select="onSelect"
+        >
+          <fbm-popup
+            class="fbm-share-sheet"
+            bind:click-overlay="onClickOverlay"
+            bind:close="onClose"
+          >
+            <fbm-overlay
+              bind:click="onClickOverlay"
+            >
+              <fbm-transition
+                customClass="fbm-overlay"
+                bind:tap="onClick"
+                catch:touchmove="noop"
+              />
+            </fbm-overlay>
+          </fbm-popup>
+        </fbm-share-sheet>
+      </wx-view>
+    </wx-view>
+  </demo-block>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix "
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        自定义图标
+      </wx-view>
+      <wx-view
+        class="demo-block__card"
+      >
+        <fbm-cell
+          data-type="customIcon"
+          bind:click="onShowShareSheet"
+        >
+          <wx-view
+            class="custom-class fbm-cell fbm-cell--clickable"
+            hoverClass="fbm-cell--hover hover-class"
+            hoverStayTime="70"
+            style=""
+            bind:tap="onClick"
+          >
+            <wx-view
+              class="fbm-cell__title title-class"
+              style=""
+            >
+              显示分享面板
+            </wx-view>
+            <wx-view
+              class="fbm-cell__value value-class"
+            />
+            <van-icon
+              class="fbm-cell__right-icon-wrap right-icon-class"
+              customClass="fbm-cell__right-icon"
+            >
+              <wx-view
+                class="custom-class van-icon van-icon-arrow"
+                style=""
+                bind:tap="onClick"
+              />
+            </van-icon>
+          </wx-view>
+        </fbm-cell>
+        <fbm-share-sheet
+          bind:close="onClose"
+          bind:select="onSelect"
+        >
+          <fbm-popup
+            class="fbm-share-sheet"
+            bind:click-overlay="onClickOverlay"
+            bind:close="onClose"
+          >
+            <fbm-overlay
+              bind:click="onClickOverlay"
+            >
+              <fbm-transition
+                customClass="fbm-overlay"
+                bind:tap="onClick"
+                catch:touchmove="noop"
+              />
+            </fbm-overlay>
+          </fbm-popup>
+        </fbm-share-sheet>
+      </wx-view>
+    </wx-view>
+  </demo-block>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix "
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        展示描述信息
+      </wx-view>
+      <wx-view
+        class="demo-block__card"
+      >
+        <fbm-cell
+          data-type="withDesc"
+          bind:click="onShowShareSheet"
+        >
+          <wx-view
+            class="custom-class fbm-cell fbm-cell--clickable"
+            hoverClass="fbm-cell--hover hover-class"
+            hoverStayTime="70"
+            style=""
+            bind:tap="onClick"
+          >
+            <wx-view
+              class="fbm-cell__title title-class"
+              style=""
+            >
+              显示分享面板
+            </wx-view>
+            <wx-view
+              class="fbm-cell__value value-class"
+            />
+            <van-icon
+              class="fbm-cell__right-icon-wrap right-icon-class"
+              customClass="fbm-cell__right-icon"
+            >
+              <wx-view
+                class="custom-class van-icon van-icon-arrow"
+                style=""
+                bind:tap="onClick"
+              />
+            </van-icon>
+          </wx-view>
+        </fbm-cell>
+        <fbm-share-sheet
+          bind:close="onClose"
+          bind:select="onSelect"
+        >
+          <fbm-popup
+            class="fbm-share-sheet"
+            bind:click-overlay="onClickOverlay"
+            bind:close="onClose"
+          >
+            <fbm-overlay
+              bind:click="onClickOverlay"
+            >
+              <fbm-transition
+                customClass="fbm-overlay"
+                bind:tap="onClick"
+                catch:touchmove="noop"
+              />
+            </fbm-overlay>
+          </fbm-popup>
+        </fbm-share-sheet>
+      </wx-view>
+    </wx-view>
+  </demo-block>
+  <fbm-toast
+    id="fbm-toast"
+  >
+    <fbm-transition
+      customClass="fbm-toast__container"
+    />
+  </fbm-toast>
+</main>
+`;

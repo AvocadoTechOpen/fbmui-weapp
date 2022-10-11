@@ -1,0 +1,704 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render demo and match snapshot 1`] = `
+<main>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix "
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        基础用法
+      </wx-view>
+      <fbm-collapse
+        data-key="active1"
+        bind:change="onChange"
+      >
+        <wx-view
+          class="custom-class fbm-collapse fbm-hairline--top-bottom"
+        >
+          <fbm-collapse-item>
+            <wx-view
+              class="fbm-collapse-item custom-class "
+            >
+              <fbm-cell
+                class="fbm-collapse-item__title fbm-collapse-item__title--expanded"
+                customClass="fbm-cell"
+                hoverClass="fbm-cell--hover"
+                rightIconClass="fbm-cell__right-icon"
+                titleClass="title-class"
+                bind:click="onClick"
+              >
+                <wx-view
+                  class="custom-class fbm-cell fbm-cell--clickable"
+                  hoverClass="fbm-cell--hover hover-class"
+                  hoverStayTime="70"
+                  style=""
+                  bind:tap="onClick"
+                >
+                  <wx-view
+                    class="fbm-cell__title title-class"
+                    style=""
+                  >
+                    标题1
+                  </wx-view>
+                  <wx-view
+                    class="fbm-cell__value value-class"
+                  />
+                  <van-icon
+                    class="fbm-cell__right-icon-wrap right-icon-class"
+                    customClass="fbm-cell__right-icon"
+                  >
+                    <wx-view
+                      class="custom-class van-icon van-icon-arrow"
+                      style=""
+                      bind:tap="onClick"
+                    />
+                  </van-icon>
+                </wx-view>
+              </fbm-cell>
+              <wx-view
+                animation=""
+                class="fbm-collapse-item__wrapper"
+                style="height: 0;"
+              >
+                <wx-view
+                  class="fbm-collapse-item__content content-class"
+                >
+                  代码是写出来给人看的，附带能在机器上运行
+                </wx-view>
+              </wx-view>
+            </wx-view>
+          </fbm-collapse-item>
+          <fbm-collapse-item>
+            <wx-view
+              class="fbm-collapse-item custom-class fbm-hairline--top"
+            >
+              <fbm-cell
+                class="fbm-collapse-item__title"
+                customClass="fbm-cell"
+                hoverClass="fbm-cell--hover"
+                rightIconClass="fbm-cell__right-icon"
+                titleClass="title-class"
+                bind:click="onClick"
+              >
+                <wx-view
+                  class="custom-class fbm-cell fbm-cell--borderless fbm-cell--clickable"
+                  hoverClass="fbm-cell--hover hover-class"
+                  hoverStayTime="70"
+                  style=""
+                  bind:tap="onClick"
+                >
+                  <wx-view
+                    class="fbm-cell__title title-class"
+                    style=""
+                  >
+                    标题2
+                  </wx-view>
+                  <wx-view
+                    class="fbm-cell__value value-class"
+                  />
+                  <van-icon
+                    class="fbm-cell__right-icon-wrap right-icon-class"
+                    customClass="fbm-cell__right-icon"
+                  >
+                    <wx-view
+                      class="custom-class van-icon van-icon-arrow"
+                      style=""
+                      bind:tap="onClick"
+                    />
+                  </van-icon>
+                </wx-view>
+              </fbm-cell>
+              <wx-view
+                animation=""
+                class="fbm-collapse-item__wrapper"
+                style="height: 0;"
+              >
+                <wx-view
+                  class="fbm-collapse-item__content content-class"
+                >
+                  代码是写出来给人看的，附带能在机器上运行
+                </wx-view>
+              </wx-view>
+            </wx-view>
+          </fbm-collapse-item>
+          <fbm-collapse-item>
+            <wx-view
+              class="fbm-collapse-item custom-class fbm-hairline--top"
+            >
+              <fbm-cell
+                class="fbm-collapse-item__title fbm-collapse-item__title--disabled"
+                customClass="fbm-cell"
+                hoverClass="fbm-cell--hover"
+                rightIconClass="fbm-cell__right-icon"
+                titleClass="title-class"
+                bind:click="onClick"
+              >
+                <wx-view
+                  class="custom-class fbm-cell fbm-cell--borderless fbm-cell--clickable"
+                  hoverClass="fbm-cell--hover hover-class"
+                  hoverStayTime="70"
+                  style=""
+                  bind:tap="onClick"
+                >
+                  <wx-view
+                    class="fbm-cell__title title-class"
+                    style=""
+                  >
+                    标题3
+                  </wx-view>
+                  <wx-view
+                    class="fbm-cell__value value-class"
+                  />
+                  <van-icon
+                    class="fbm-cell__right-icon-wrap right-icon-class"
+                    customClass="fbm-cell__right-icon"
+                  >
+                    <wx-view
+                      class="custom-class van-icon van-icon-arrow"
+                      style=""
+                      bind:tap="onClick"
+                    />
+                  </van-icon>
+                </wx-view>
+              </fbm-cell>
+              <wx-view
+                animation=""
+                class="fbm-collapse-item__wrapper"
+                style="height: 0;"
+              >
+                <wx-view
+                  class="fbm-collapse-item__content content-class"
+                >
+                  代码是写出来给人看的，附带能在机器上运行
+                </wx-view>
+              </wx-view>
+            </wx-view>
+          </fbm-collapse-item>
+        </wx-view>
+      </fbm-collapse>
+    </wx-view>
+  </demo-block>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix "
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        手风琴
+      </wx-view>
+      <fbm-collapse
+        data-key="active2"
+        bind:change="onChange"
+      >
+        <wx-view
+          class="custom-class fbm-collapse fbm-hairline--top-bottom"
+        >
+          <fbm-collapse-item>
+            <wx-view
+              class="fbm-collapse-item custom-class "
+            >
+              <fbm-cell
+                class="fbm-collapse-item__title fbm-collapse-item__title--expanded"
+                customClass="fbm-cell"
+                hoverClass="fbm-cell--hover"
+                rightIconClass="fbm-cell__right-icon"
+                titleClass="title-class"
+                bind:click="onClick"
+              >
+                <wx-view
+                  class="custom-class fbm-cell fbm-cell--clickable"
+                  hoverClass="fbm-cell--hover hover-class"
+                  hoverStayTime="70"
+                  style=""
+                  bind:tap="onClick"
+                >
+                  <wx-view
+                    class="fbm-cell__title title-class"
+                    style=""
+                  >
+                    标题1
+                  </wx-view>
+                  <wx-view
+                    class="fbm-cell__value value-class"
+                  />
+                  <van-icon
+                    class="fbm-cell__right-icon-wrap right-icon-class"
+                    customClass="fbm-cell__right-icon"
+                  >
+                    <wx-view
+                      class="custom-class van-icon van-icon-arrow"
+                      style=""
+                      bind:tap="onClick"
+                    />
+                  </van-icon>
+                </wx-view>
+              </fbm-cell>
+              <wx-view
+                animation=""
+                class="fbm-collapse-item__wrapper"
+                style="height: 0;"
+              >
+                <wx-view
+                  class="fbm-collapse-item__content content-class"
+                >
+                  代码是写出来给人看的，附带能在机器上运行
+                </wx-view>
+              </wx-view>
+            </wx-view>
+          </fbm-collapse-item>
+          <fbm-collapse-item>
+            <wx-view
+              class="fbm-collapse-item custom-class fbm-hairline--top"
+            >
+              <fbm-cell
+                class="fbm-collapse-item__title"
+                customClass="fbm-cell"
+                hoverClass="fbm-cell--hover"
+                rightIconClass="fbm-cell__right-icon"
+                titleClass="title-class"
+                bind:click="onClick"
+              >
+                <wx-view
+                  class="custom-class fbm-cell fbm-cell--borderless fbm-cell--clickable"
+                  hoverClass="fbm-cell--hover hover-class"
+                  hoverStayTime="70"
+                  style=""
+                  bind:tap="onClick"
+                >
+                  <wx-view
+                    class="fbm-cell__title title-class"
+                    style=""
+                  >
+                    标题2
+                  </wx-view>
+                  <wx-view
+                    class="fbm-cell__value value-class"
+                  />
+                  <van-icon
+                    class="fbm-cell__right-icon-wrap right-icon-class"
+                    customClass="fbm-cell__right-icon"
+                  >
+                    <wx-view
+                      class="custom-class van-icon van-icon-arrow"
+                      style=""
+                      bind:tap="onClick"
+                    />
+                  </van-icon>
+                </wx-view>
+              </fbm-cell>
+              <wx-view
+                animation=""
+                class="fbm-collapse-item__wrapper"
+                style="height: 0;"
+              >
+                <wx-view
+                  class="fbm-collapse-item__content content-class"
+                >
+                  代码是写出来给人看的，附带能在机器上运行
+                </wx-view>
+              </wx-view>
+            </wx-view>
+          </fbm-collapse-item>
+          <fbm-collapse-item>
+            <wx-view
+              class="fbm-collapse-item custom-class fbm-hairline--top"
+            >
+              <fbm-cell
+                class="fbm-collapse-item__title"
+                customClass="fbm-cell"
+                hoverClass="fbm-cell--hover"
+                rightIconClass="fbm-cell__right-icon"
+                titleClass="title-class"
+                bind:click="onClick"
+              >
+                <wx-view
+                  class="custom-class fbm-cell fbm-cell--borderless fbm-cell--clickable"
+                  hoverClass="fbm-cell--hover hover-class"
+                  hoverStayTime="70"
+                  style=""
+                  bind:tap="onClick"
+                >
+                  <wx-view
+                    class="fbm-cell__title title-class"
+                    style=""
+                  >
+                    标题3
+                  </wx-view>
+                  <wx-view
+                    class="fbm-cell__value value-class"
+                  />
+                  <van-icon
+                    class="fbm-cell__right-icon-wrap right-icon-class"
+                    customClass="fbm-cell__right-icon"
+                  >
+                    <wx-view
+                      class="custom-class van-icon van-icon-arrow"
+                      style=""
+                      bind:tap="onClick"
+                    />
+                  </van-icon>
+                </wx-view>
+              </fbm-cell>
+              <wx-view
+                animation=""
+                class="fbm-collapse-item__wrapper"
+                style="height: 0;"
+              >
+                <wx-view
+                  class="fbm-collapse-item__content content-class"
+                >
+                  代码是写出来给人看的，附带能在机器上运行
+                </wx-view>
+              </wx-view>
+            </wx-view>
+          </fbm-collapse-item>
+        </wx-view>
+      </fbm-collapse>
+    </wx-view>
+  </demo-block>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix "
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        事件监听
+      </wx-view>
+      <fbm-collapse
+        data-key="active3"
+        bind:change="onChange"
+        bind:close="onClose"
+        bind:open="onOpen"
+      >
+        <wx-view
+          class="custom-class fbm-collapse fbm-hairline--top-bottom"
+        >
+          <fbm-collapse-item>
+            <wx-view
+              class="fbm-collapse-item custom-class "
+            >
+              <fbm-cell
+                class="fbm-collapse-item__title"
+                customClass="fbm-cell"
+                hoverClass="fbm-cell--hover"
+                rightIconClass="fbm-cell__right-icon"
+                titleClass="title-class"
+                bind:click="onClick"
+              >
+                <wx-view
+                  class="custom-class fbm-cell fbm-cell--borderless fbm-cell--clickable"
+                  hoverClass="fbm-cell--hover hover-class"
+                  hoverStayTime="70"
+                  style=""
+                  bind:tap="onClick"
+                >
+                  <wx-view
+                    class="fbm-cell__title title-class"
+                    style=""
+                  >
+                    标题1
+                  </wx-view>
+                  <wx-view
+                    class="fbm-cell__value value-class"
+                  />
+                  <van-icon
+                    class="fbm-cell__right-icon-wrap right-icon-class"
+                    customClass="fbm-cell__right-icon"
+                  >
+                    <wx-view
+                      class="custom-class van-icon van-icon-arrow"
+                      style=""
+                      bind:tap="onClick"
+                    />
+                  </van-icon>
+                </wx-view>
+              </fbm-cell>
+              <wx-view
+                animation=""
+                class="fbm-collapse-item__wrapper"
+                style="height: 0;"
+              >
+                <wx-view
+                  class="fbm-collapse-item__content content-class"
+                >
+                  代码是写出来给人看的，附带能在机器上运行
+                </wx-view>
+              </wx-view>
+            </wx-view>
+          </fbm-collapse-item>
+          <fbm-collapse-item>
+            <wx-view
+              class="fbm-collapse-item custom-class fbm-hairline--top"
+            >
+              <fbm-cell
+                class="fbm-collapse-item__title"
+                customClass="fbm-cell"
+                hoverClass="fbm-cell--hover"
+                rightIconClass="fbm-cell__right-icon"
+                titleClass="title-class"
+                bind:click="onClick"
+              >
+                <wx-view
+                  class="custom-class fbm-cell fbm-cell--borderless fbm-cell--clickable"
+                  hoverClass="fbm-cell--hover hover-class"
+                  hoverStayTime="70"
+                  style=""
+                  bind:tap="onClick"
+                >
+                  <wx-view
+                    class="fbm-cell__title title-class"
+                    style=""
+                  >
+                    标题2
+                  </wx-view>
+                  <wx-view
+                    class="fbm-cell__value value-class"
+                  />
+                  <van-icon
+                    class="fbm-cell__right-icon-wrap right-icon-class"
+                    customClass="fbm-cell__right-icon"
+                  >
+                    <wx-view
+                      class="custom-class van-icon van-icon-arrow"
+                      style=""
+                      bind:tap="onClick"
+                    />
+                  </van-icon>
+                </wx-view>
+              </fbm-cell>
+              <wx-view
+                animation=""
+                class="fbm-collapse-item__wrapper"
+                style="height: 0;"
+              >
+                <wx-view
+                  class="fbm-collapse-item__content content-class"
+                >
+                  代码是写出来给人看的，附带能在机器上运行
+                </wx-view>
+              </wx-view>
+            </wx-view>
+          </fbm-collapse-item>
+          <fbm-collapse-item>
+            <wx-view
+              class="fbm-collapse-item custom-class fbm-hairline--top"
+            >
+              <fbm-cell
+                class="fbm-collapse-item__title"
+                customClass="fbm-cell"
+                hoverClass="fbm-cell--hover"
+                rightIconClass="fbm-cell__right-icon"
+                titleClass="title-class"
+                bind:click="onClick"
+              >
+                <wx-view
+                  class="custom-class fbm-cell fbm-cell--borderless fbm-cell--clickable"
+                  hoverClass="fbm-cell--hover hover-class"
+                  hoverStayTime="70"
+                  style=""
+                  bind:tap="onClick"
+                >
+                  <wx-view
+                    class="fbm-cell__title title-class"
+                    style=""
+                  >
+                    标题3
+                  </wx-view>
+                  <wx-view
+                    class="fbm-cell__value value-class"
+                  />
+                  <van-icon
+                    class="fbm-cell__right-icon-wrap right-icon-class"
+                    customClass="fbm-cell__right-icon"
+                  >
+                    <wx-view
+                      class="custom-class van-icon van-icon-arrow"
+                      style=""
+                      bind:tap="onClick"
+                    />
+                  </van-icon>
+                </wx-view>
+              </fbm-cell>
+              <wx-view
+                animation=""
+                class="fbm-collapse-item__wrapper"
+                style="height: 0;"
+              >
+                <wx-view
+                  class="fbm-collapse-item__content content-class"
+                >
+                  代码是写出来给人看的，附带能在机器上运行
+                </wx-view>
+              </wx-view>
+            </wx-view>
+          </fbm-collapse-item>
+        </wx-view>
+      </fbm-collapse>
+    </wx-view>
+  </demo-block>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix "
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        自定义标题内容
+      </wx-view>
+      <fbm-collapse
+        data-key="active4"
+        bind:change="onChange"
+      >
+        <wx-view
+          class="custom-class fbm-collapse fbm-hairline--top-bottom"
+        >
+          <fbm-collapse-item>
+            <wx-view
+              class="fbm-collapse-item custom-class "
+            >
+              <fbm-cell
+                class="fbm-collapse-item__title"
+                customClass="fbm-cell"
+                hoverClass="fbm-cell--hover"
+                rightIconClass="fbm-cell__right-icon"
+                titleClass="title-class"
+                bind:click="onClick"
+              >
+                <wx-view
+                  class="custom-class fbm-cell fbm-cell--borderless fbm-cell--clickable"
+                  hoverClass="fbm-cell--hover hover-class"
+                  hoverStayTime="70"
+                  style=""
+                  bind:tap="onClick"
+                >
+                  <wx-view
+                    class="fbm-cell__title title-class"
+                    style=""
+                  >
+                    <wx-view
+                      slot="title"
+                    >
+                      
+        标题1
+        
+                      <van-icon
+                        customClass="van-icon-question"
+                        name="question-o"
+                      />
+                    </wx-view>
+                  </wx-view>
+                  <wx-view
+                    class="fbm-cell__value value-class"
+                  />
+                  <van-icon
+                    class="fbm-cell__right-icon-wrap right-icon-class"
+                    customClass="fbm-cell__right-icon"
+                  >
+                    <wx-view
+                      class="custom-class van-icon van-icon-arrow"
+                      style=""
+                      bind:tap="onClick"
+                    />
+                  </van-icon>
+                </wx-view>
+              </fbm-cell>
+              <wx-view
+                animation=""
+                class="fbm-collapse-item__wrapper"
+                style="height: 0;"
+              >
+                <wx-view
+                  class="fbm-collapse-item__content content-class"
+                >
+                  
+      代码是写出来给人看的，附带能在机器上运行
+    
+                </wx-view>
+              </wx-view>
+            </wx-view>
+          </fbm-collapse-item>
+          <fbm-collapse-item>
+            <wx-view
+              class="fbm-collapse-item custom-class fbm-hairline--top"
+            >
+              <fbm-cell
+                class="fbm-collapse-item__title"
+                customClass="fbm-cell"
+                hoverClass="fbm-cell--hover"
+                rightIconClass="fbm-cell__right-icon"
+                titleClass="title-class"
+                bind:click="onClick"
+              >
+                <wx-view
+                  class="custom-class fbm-cell fbm-cell--borderless fbm-cell--clickable"
+                  hoverClass="fbm-cell--hover hover-class"
+                  hoverStayTime="70"
+                  style=""
+                  bind:tap="onClick"
+                >
+                  <van-icon
+                    class="fbm-cell__left-icon-wrap"
+                    customClass="fbm-cell__left-icon"
+                  >
+                    <wx-view
+                      class="custom-class van-icon van-icon-shop-o"
+                      style=""
+                      bind:tap="onClick"
+                    />
+                  </van-icon>
+                  <wx-view
+                    class="fbm-cell__title title-class"
+                    style=""
+                  >
+                    标题2
+                  </wx-view>
+                  <wx-view
+                    class="fbm-cell__value value-class"
+                  >
+                    内容
+                  </wx-view>
+                  <van-icon
+                    class="fbm-cell__right-icon-wrap right-icon-class"
+                    customClass="fbm-cell__right-icon"
+                  >
+                    <wx-view
+                      class="custom-class van-icon van-icon-arrow"
+                      style=""
+                      bind:tap="onClick"
+                    />
+                  </van-icon>
+                </wx-view>
+              </fbm-cell>
+              <wx-view
+                animation=""
+                class="fbm-collapse-item__wrapper"
+                style="height: 0;"
+              >
+                <wx-view
+                  class="fbm-collapse-item__content content-class"
+                >
+                  
+      代码是写出来给人看的，附带能在机器上运行
+    
+                </wx-view>
+              </wx-view>
+            </wx-view>
+          </fbm-collapse-item>
+        </wx-view>
+      </fbm-collapse>
+    </wx-view>
+  </demo-block>
+  <fbm-toast
+    id="fbm-toast"
+  >
+    <fbm-transition
+      customClass="fbm-toast__container"
+    />
+  </fbm-toast>
+</main>
+`;

@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "fbm-button": "../../button/index",
+    "fbm-cell": "../../cell/index",
+    "fbm-checkbox": "../../checkbox/index",
+    "fbm-checkbox-group": "../../checkbox-group/index",
+    "demo-block": "../../../example/components/demo-block/index"
+  }
+}

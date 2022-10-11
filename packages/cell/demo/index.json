@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "fbm-cell": "../../cell/index",
+    "fbm-cell-group": "../../cell-group/index",
+    "van-icon": "../../icon/index",
+    "fbm-tag": "../../tag/index",
+    "demo-block": "../../../example/components/demo-block/index"
+  }
+}

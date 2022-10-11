@@ -1,0 +1,162 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render demo and match snapshot 1`] = `
+<main>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix "
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        基础用法
+      </wx-view>
+      <fbm-area
+        bind:cancel="onCancel"
+        bind:change="onChange"
+        bind:confirm="onConfirm"
+      >
+        <fbm-picker
+          activeClass="active-class"
+          class="fbm-area__picker"
+          columnClass="column-class"
+          toolbarClass="toolbar-class"
+          bind:cancel="onCancel"
+          bind:change="onChange"
+          bind:confirm="onConfirm"
+        >
+          <wx-view
+            class="fbm-picker custom-class"
+          >
+            <wx-view
+              class="fbm-picker__toolbar toolbar-class"
+            >
+              <wx-view
+                class="fbm-picker__cancel"
+                data-type="cancel"
+                hoverClass="fbm-picker__cancel--hover"
+                hoverStayTime="70"
+                bind:tap="emit"
+              >
+                
+    取消
+  
+              </wx-view>
+              <wx-view
+                class="fbm-picker__confirm"
+                data-type="confirm"
+                hoverClass="fbm-picker__confirm--hover"
+                hoverStayTime="70"
+                bind:tap="emit"
+              >
+                
+    确认
+  
+              </wx-view>
+            </wx-view>
+            <wx-view
+              class="fbm-picker__loading"
+            >
+              <loading>
+                <wx-view
+                  class="custom-class fbm-loading"
+                >
+                  <wx-view
+                    class="fbm-loading__spinner fbm-loading__spinner--circular"
+                    style="color:#1989fa"
+                  />
+                  <wx-view
+                    class="fbm-loading__text"
+                    style=""
+                  />
+                </wx-view>
+              </loading>
+            </wx-view>
+            <wx-view
+              class="fbm-picker__columns"
+              style="height:264px"
+              catch:touchmove="noop"
+            >
+              <picker-column
+                activeClass="active-class"
+                class="fbm-picker__column"
+                customClass="column-class"
+                data-index="{{0}}"
+                bind:change="onChange"
+              >
+                <wx-view
+                  class="fbm-picker-column custom-class"
+                  style="height:264px"
+                  bind:touchcancel="onTouchEnd"
+                  bind:touchend="onTouchEnd"
+                  catch:touchmove="onTouchMove"
+                  bind:touchstart="onTouchStart"
+                >
+                  <wx-view
+                    style="transition:transform 0ms;line-height:44px;transform:translate3d(0, 110px, 0)"
+                  />
+                </wx-view>
+              </picker-column>
+              <picker-column
+                activeClass="active-class"
+                class="fbm-picker__column"
+                customClass="column-class"
+                data-index="{{1}}"
+                bind:change="onChange"
+              >
+                <wx-view
+                  class="fbm-picker-column custom-class"
+                  style="height:264px"
+                  bind:touchcancel="onTouchEnd"
+                  bind:touchend="onTouchEnd"
+                  catch:touchmove="onTouchMove"
+                  bind:touchstart="onTouchStart"
+                >
+                  <wx-view
+                    style="transition:transform 0ms;line-height:44px;transform:translate3d(0, 110px, 0)"
+                  />
+                </wx-view>
+              </picker-column>
+              <picker-column
+                activeClass="active-class"
+                class="fbm-picker__column"
+                customClass="column-class"
+                data-index="{{2}}"
+                bind:change="onChange"
+              >
+                <wx-view
+                  class="fbm-picker-column custom-class"
+                  style="height:264px"
+                  bind:touchcancel="onTouchEnd"
+                  bind:touchend="onTouchEnd"
+                  catch:touchmove="onTouchMove"
+                  bind:touchstart="onTouchStart"
+                >
+                  <wx-view
+                    style="transition:transform 0ms;line-height:44px;transform:translate3d(0, 110px, 0)"
+                  />
+                </wx-view>
+              </picker-column>
+              <wx-view
+                class="fbm-picker__mask"
+                style="background-size:100% 110px"
+              />
+              <wx-view
+                class="fbm-picker__frame fbm-hairline--top-bottom"
+                style="height:44px"
+              />
+            </wx-view>
+          </wx-view>
+        </fbm-picker>
+      </fbm-area>
+    </wx-view>
+  </demo-block>
+  <fbm-toast
+    id="fbm-toast"
+  >
+    <fbm-transition
+      customClass="fbm-toast__container"
+    />
+  </fbm-toast>
+</main>
+`;

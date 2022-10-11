@@ -1,0 +1,17 @@
+<demo-block title="基础用法" padding>
+  <fbm-button type="primary" bind:click="onClickShow">
+    显示遮罩层
+  </fbm-button>
+  <fbm-overlay show="{{ show }}" bind:click="onClickHide" />
+</demo-block>
+
+<demo-block title="嵌入内容" padding>
+  <fbm-button type="primary" bind:click="onClickShowEmbedded">
+    嵌入内容
+  </fbm-button>
+  <fbm-overlay show="{{ showEmbedded }}" bind:click="onClickHideEmbedded">
+    <view class="wrapper">
+      <div class="block" catch:tap="noop" />
+    </view>
+  </fbm-overlay>
+</demo-block>

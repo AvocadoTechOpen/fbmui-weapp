@@ -1,0 +1,3 @@
+<view class="custom-class fbm-collapse {{ border ? 'fbm-hairline--top-bottom' : '' }}">
+  <slot />
+</view>

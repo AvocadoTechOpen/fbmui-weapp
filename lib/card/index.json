@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "fbm-tag": "../tag/index"
+  }
+}

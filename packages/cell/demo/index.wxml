@@ -1,0 +1,97 @@
+<demo-block title="基础用法">
+  <fbm-cell-group>
+    <fbm-cell title="单元格" value="内容" />
+    <fbm-cell
+      title="单元格"
+      value="内容"
+      label="描述信息"
+      border="{{ false }}"
+    />
+  </fbm-cell-group>
+</demo-block>
+
+<demo-block title="卡片风格">
+  <fbm-cell-group inset>
+    <fbm-cell title="单元格" value="内容" />
+    <fbm-cell title="单元格" value="内容" label="描述信息" />
+  </fbm-cell-group>
+</demo-block>
+
+<demo-block title="单元格大小">
+  <fbm-cell-group>
+    <fbm-cell
+      title="单元格"
+      value="内容"
+      size="large"
+    />
+    <fbm-cell
+      title="单元格"
+      value="内容"
+      size="large"
+      use-label-slot
+      border="{{ false }}"
+    >
+      <view slot="label">描述信息</view>
+    </fbm-cell>
+  </fbm-cell-group>
+</demo-block>
+
+<demo-block title="展示图标">
+  <fbm-cell
+    title="单元格"
+    value="内容"
+    icon="location-o"
+    border="{{ false }}"
+  />
+</demo-block>
+
+<demo-block title="展示箭头">
+  <fbm-cell title="单元格" is-link />
+  <fbm-cell
+    title="单元格"
+    value="内容"
+    is-link
+  />
+  <fbm-cell
+    title="单元格"
+    is-link
+    arrow-direction="down"
+    value="内容"
+    border="{{ false }}"
+  />
+</demo-block>
+
+<demo-block title="页面跳转">
+  <fbm-cell title="单元格" is-link url="/pages/dashboard/index" />
+  <fbm-cell title="单元格" is-link url="/pages/dashboard/index" link-type="redirectTo" />
+</demo-block>
+
+<demo-block title="分组标题">
+  <fbm-cell-group title="分组 1">
+    <fbm-cell title="单元格" value="内容" />
+  </fbm-cell-group>
+  <fbm-cell-group title="分组 2">
+    <fbm-cell title="单元格" value="内容" />
+  </fbm-cell-group>
+</demo-block>
+
+<demo-block title="使用插槽">
+  <fbm-cell value="内容" icon="shop-o" is-link>
+    <view slot="title">
+      <view class="title">单元格</view>
+      <fbm-tag type="danger">标签</fbm-tag>
+    </view>
+  </fbm-cell>
+  <fbm-cell title="单元格" border="{{ false }}">
+    <van-icon slot="right-icon" name="search" />
+  </fbm-cell>
+</demo-block>
+
+<demo-block title="垂直居中">
+  <fbm-cell
+    center
+    title="单元格"
+    value="内容"
+    label="描述信息"
+  />
+</demo-block>

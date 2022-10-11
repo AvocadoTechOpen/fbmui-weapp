@@ -1,0 +1,21 @@
+<wxs src="../wxs/utils.wxs" module="utils" />
+<wxs src="./index.wxs" module="computed" />
+
+<fbm-transition
+  name="slide-down"
+  show="{{ show }}"
+  custom-class="fbm-notify__container"
+  custom-style="{{ computed.rootStyle({ zIndex, top }) }}"
+  bind:tap="onTap"
+>
+  <view
+    class="fbm-notify fbm-notify--{{ type }}"
+    style="{{ computed.notifyStyle({ background, color }) }}"
+  >
+    <view
+      wx:if="{{ safeAreaInsetTop }}"
+      style="height: {{ statusBarHeight }}px"
+    />
+    <text>{{ message }}</text>
+  </view>
+</fbm-transition>

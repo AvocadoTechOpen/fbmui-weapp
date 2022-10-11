@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "fbm-button": "../button/index",
+    "van-icon": "../icon/index"
+  }
+}

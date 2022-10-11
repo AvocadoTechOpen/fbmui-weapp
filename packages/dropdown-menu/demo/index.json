@@ -1,0 +1,11 @@
+{
+  "component": true,
+  "usingComponents": {
+    "fbm-cell": "../../cell/index",
+    "fbm-switch": "../../switch/index",
+    "fbm-button": "../../button/index",
+    "fbm-dropdown-item": "../../dropdown-item/index",
+    "fbm-dropdown-menu": "../../dropdown-menu/index",
+    "demo-block": "../../../example/components/demo-block/index"
+  }
+}

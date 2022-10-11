@@ -1,0 +1,14 @@
+<view
+  class="fbm-index-anchor-wrapper"
+  style="{{ wrapperStyle }}"
+>
+  <view
+    class="fbm-index-anchor {{ active ? 'fbm-index-anchor--active fbm-hairline--bottom' : '' }}"
+    style="{{ anchorStyle }}"
+  >
+    <slot wx:if="{{ useSlot }}"/>
+    <block wx:else>
+      <text>{{ index }}</text>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "fbm-row": "../../row/index",
+    "fbm-col": "../../col/index",
+    "fbm-image": "../../image/index",
+    "fbm-loading": "../../loading/index",
+    "demo-block": "../../../example/components/demo-block/index"
+  }
+}

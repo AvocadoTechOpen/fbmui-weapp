@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "fbm-grid": "../../grid/index",
+    "fbm-toast": "../../toast/index",
+    "fbm-grid-item": "../../grid-item/index",
+    "fbm-count-down": "../../count-down/index",
+    "demo-block": "../../../example/components/demo-block/index"
+  }
+}

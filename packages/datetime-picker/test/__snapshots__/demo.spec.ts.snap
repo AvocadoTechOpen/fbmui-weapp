@@ -1,0 +1,360 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render demo and match snapshot 1`] = `
+<main>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix "
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        选择完整时间
+      </wx-view>
+      <fbm-datetime-picker
+        data-type="datetime"
+        bind:input="onInput"
+      >
+        <fbm-picker
+          activeClass="active-class"
+          class="fbm-datetime-picker"
+          columnClass="column-class"
+          toolbarClass="toolbar-class"
+          bind:cancel="onCancel"
+          bind:change="onChange"
+          bind:confirm="onConfirm"
+        >
+          <wx-view
+            class="fbm-picker custom-class"
+          >
+            <wx-view
+              class="fbm-picker__toolbar toolbar-class"
+            >
+              <wx-view
+                class="fbm-picker__cancel"
+                data-type="cancel"
+                hoverClass="fbm-picker__cancel--hover"
+                hoverStayTime="70"
+                bind:tap="emit"
+              >
+                
+    取消
+  
+              </wx-view>
+              <wx-view
+                class="fbm-picker__confirm"
+                data-type="confirm"
+                hoverClass="fbm-picker__confirm--hover"
+                hoverStayTime="70"
+                bind:tap="emit"
+              >
+                
+    确认
+  
+              </wx-view>
+            </wx-view>
+            <wx-view
+              class="fbm-picker__columns"
+              style="height:264px"
+              catch:touchmove="noop"
+            >
+              <wx-view
+                class="fbm-picker__mask"
+                style="background-size:100% 110px"
+              />
+              <wx-view
+                class="fbm-picker__frame fbm-hairline--top-bottom"
+                style="height:44px"
+              />
+            </wx-view>
+          </wx-view>
+        </fbm-picker>
+      </fbm-datetime-picker>
+    </wx-view>
+  </demo-block>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix "
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        选择日期（年月日）
+      </wx-view>
+      <fbm-datetime-picker
+        data-type="date"
+        bind:input="onInput"
+      >
+        <fbm-picker
+          activeClass="active-class"
+          class="fbm-datetime-picker"
+          columnClass="column-class"
+          toolbarClass="toolbar-class"
+          bind:cancel="onCancel"
+          bind:change="onChange"
+          bind:confirm="onConfirm"
+        >
+          <wx-view
+            class="fbm-picker custom-class"
+          >
+            <wx-view
+              class="fbm-picker__toolbar toolbar-class"
+            >
+              <wx-view
+                class="fbm-picker__cancel"
+                data-type="cancel"
+                hoverClass="fbm-picker__cancel--hover"
+                hoverStayTime="70"
+                bind:tap="emit"
+              >
+                
+    取消
+  
+              </wx-view>
+              <wx-view
+                class="fbm-picker__confirm"
+                data-type="confirm"
+                hoverClass="fbm-picker__confirm--hover"
+                hoverStayTime="70"
+                bind:tap="emit"
+              >
+                
+    确认
+  
+              </wx-view>
+            </wx-view>
+            <wx-view
+              class="fbm-picker__columns"
+              style="height:264px"
+              catch:touchmove="noop"
+            >
+              <wx-view
+                class="fbm-picker__mask"
+                style="background-size:100% 110px"
+              />
+              <wx-view
+                class="fbm-picker__frame fbm-hairline--top-bottom"
+                style="height:44px"
+              />
+            </wx-view>
+          </wx-view>
+        </fbm-picker>
+      </fbm-datetime-picker>
+    </wx-view>
+  </demo-block>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix "
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        选择日期（年月）
+      </wx-view>
+      <fbm-datetime-picker
+        data-type="year-month"
+        bind:input="onInput"
+      >
+        <fbm-picker
+          activeClass="active-class"
+          class="fbm-datetime-picker"
+          columnClass="column-class"
+          toolbarClass="toolbar-class"
+          bind:cancel="onCancel"
+          bind:change="onChange"
+          bind:confirm="onConfirm"
+        >
+          <wx-view
+            class="fbm-picker custom-class"
+          >
+            <wx-view
+              class="fbm-picker__toolbar toolbar-class"
+            >
+              <wx-view
+                class="fbm-picker__cancel"
+                data-type="cancel"
+                hoverClass="fbm-picker__cancel--hover"
+                hoverStayTime="70"
+                bind:tap="emit"
+              >
+                
+    取消
+  
+              </wx-view>
+              <wx-view
+                class="fbm-picker__confirm"
+                data-type="confirm"
+                hoverClass="fbm-picker__confirm--hover"
+                hoverStayTime="70"
+                bind:tap="emit"
+              >
+                
+    确认
+  
+              </wx-view>
+            </wx-view>
+            <wx-view
+              class="fbm-picker__columns"
+              style="height:264px"
+              catch:touchmove="noop"
+            >
+              <wx-view
+                class="fbm-picker__mask"
+                style="background-size:100% 110px"
+              />
+              <wx-view
+                class="fbm-picker__frame fbm-hairline--top-bottom"
+                style="height:44px"
+              />
+            </wx-view>
+          </wx-view>
+        </fbm-picker>
+      </fbm-datetime-picker>
+    </wx-view>
+  </demo-block>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix "
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        选择时间
+      </wx-view>
+      <fbm-datetime-picker
+        data-type="time"
+        bind:input="onInput"
+      >
+        <fbm-picker
+          activeClass="active-class"
+          class="fbm-datetime-picker"
+          columnClass="column-class"
+          toolbarClass="toolbar-class"
+          bind:cancel="onCancel"
+          bind:change="onChange"
+          bind:confirm="onConfirm"
+        >
+          <wx-view
+            class="fbm-picker custom-class"
+          >
+            <wx-view
+              class="fbm-picker__toolbar toolbar-class"
+            >
+              <wx-view
+                class="fbm-picker__cancel"
+                data-type="cancel"
+                hoverClass="fbm-picker__cancel--hover"
+                hoverStayTime="70"
+                bind:tap="emit"
+              >
+                
+    取消
+  
+              </wx-view>
+              <wx-view
+                class="fbm-picker__confirm"
+                data-type="confirm"
+                hoverClass="fbm-picker__confirm--hover"
+                hoverStayTime="70"
+                bind:tap="emit"
+              >
+                
+    确认
+  
+              </wx-view>
+            </wx-view>
+            <wx-view
+              class="fbm-picker__columns"
+              style="height:264px"
+              catch:touchmove="noop"
+            >
+              <wx-view
+                class="fbm-picker__mask"
+                style="background-size:100% 110px"
+              />
+              <wx-view
+                class="fbm-picker__frame fbm-hairline--top-bottom"
+                style="height:44px"
+              />
+            </wx-view>
+          </wx-view>
+        </fbm-picker>
+      </fbm-datetime-picker>
+    </wx-view>
+  </demo-block>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix "
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        选项过滤器
+      </wx-view>
+      <fbm-datetime-picker>
+        <fbm-picker
+          activeClass="active-class"
+          class="fbm-datetime-picker"
+          columnClass="column-class"
+          toolbarClass="toolbar-class"
+          bind:cancel="onCancel"
+          bind:change="onChange"
+          bind:confirm="onConfirm"
+        >
+          <wx-view
+            class="fbm-picker custom-class"
+          >
+            <wx-view
+              class="fbm-picker__toolbar toolbar-class"
+            >
+              <wx-view
+                class="fbm-picker__cancel"
+                data-type="cancel"
+                hoverClass="fbm-picker__cancel--hover"
+                hoverStayTime="70"
+                bind:tap="emit"
+              >
+                
+    取消
+  
+              </wx-view>
+              <wx-view
+                class="fbm-picker__confirm"
+                data-type="confirm"
+                hoverClass="fbm-picker__confirm--hover"
+                hoverStayTime="70"
+                bind:tap="emit"
+              >
+                
+    确认
+  
+              </wx-view>
+            </wx-view>
+            <wx-view
+              class="fbm-picker__columns"
+              style="height:264px"
+              catch:touchmove="noop"
+            >
+              <wx-view
+                class="fbm-picker__mask"
+                style="background-size:100% 110px"
+              />
+              <wx-view
+                class="fbm-picker__frame fbm-hairline--top-bottom"
+                style="height:44px"
+              />
+            </wx-view>
+          </wx-view>
+        </fbm-picker>
+      </fbm-datetime-picker>
+    </wx-view>
+  </demo-block>
+  <fbm-toast
+    id="fbm-toast"
+  >
+    <fbm-transition
+      customClass="fbm-toast__container"
+    />
+  </fbm-toast>
+</main>
+`;

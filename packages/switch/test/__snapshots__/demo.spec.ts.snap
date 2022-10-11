@@ -1,0 +1,183 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render demo and match snapshot 1`] = `
+<main>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix demo-block--padding"
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        基础用法
+      </wx-view>
+      <fbm-switch
+        bind:change="onChange"
+      >
+        <wx-view
+          class="fbm-switch fbm-switch--on custom-class"
+          style="font-size:30px"
+          bind:tap="onClick"
+        >
+          <wx-view
+            class="fbm-switch__node node-class"
+          />
+        </wx-view>
+      </fbm-switch>
+    </wx-view>
+  </demo-block>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix demo-block--padding"
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        禁用状态
+      </wx-view>
+      <fbm-switch
+        bind:change="onChange"
+      >
+        <wx-view
+          class="fbm-switch fbm-switch--on fbm-switch--disabled custom-class"
+          style="font-size:30px"
+          bind:tap="onClick"
+        >
+          <wx-view
+            class="fbm-switch__node node-class"
+          />
+        </wx-view>
+      </fbm-switch>
+    </wx-view>
+  </demo-block>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix demo-block--padding"
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        加载状态
+      </wx-view>
+      <fbm-switch
+        bind:change="onChange"
+      >
+        <wx-view
+          class="fbm-switch fbm-switch--on custom-class"
+          style="font-size:30px"
+          bind:tap="onClick"
+        >
+          <wx-view
+            class="fbm-switch__node node-class"
+          >
+            <fbm-loading
+              customClass="fbm-switch__loading"
+            >
+              <wx-view
+                class="custom-class fbm-loading"
+              >
+                <wx-view
+                  class="fbm-loading__spinner fbm-loading__spinner--circular"
+                  style="color:#1989fa"
+                />
+                <wx-view
+                  class="fbm-loading__text"
+                  style=""
+                />
+              </wx-view>
+            </fbm-loading>
+          </wx-view>
+        </wx-view>
+      </fbm-switch>
+    </wx-view>
+  </demo-block>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix demo-block--padding"
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        自定义大小
+      </wx-view>
+      <fbm-switch
+        bind:change="onChange"
+      >
+        <wx-view
+          class="fbm-switch fbm-switch--on custom-class"
+          style="font-size:24px"
+          bind:tap="onClick"
+        >
+          <wx-view
+            class="fbm-switch__node node-class"
+          />
+        </wx-view>
+      </fbm-switch>
+    </wx-view>
+  </demo-block>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix demo-block--padding"
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        自定义颜色
+      </wx-view>
+      <fbm-switch
+        bind:change="onChange"
+      >
+        <wx-view
+          class="fbm-switch fbm-switch--on custom-class"
+          style="font-size:30px;background-color:#07c160"
+          bind:tap="onClick"
+        >
+          <wx-view
+            class="fbm-switch__node node-class"
+          />
+        </wx-view>
+      </fbm-switch>
+    </wx-view>
+  </demo-block>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix demo-block--padding"
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        异步控制
+      </wx-view>
+      <fbm-switch
+        bind:change="onChange2"
+      >
+        <wx-view
+          class="fbm-switch fbm-switch--on custom-class"
+          style="font-size:36px"
+          bind:tap="onClick"
+        >
+          <wx-view
+            class="fbm-switch__node node-class"
+          />
+        </wx-view>
+      </fbm-switch>
+    </wx-view>
+  </demo-block>
+  <fbm-dialog>
+    <fbm-popup
+      customClass="fbm-dialog fbm-dialog--default "
+      bind:close="onClickOverlay"
+    >
+      <fbm-overlay
+        bind:click="onClickOverlay"
+      >
+        <fbm-transition
+          customClass="fbm-overlay"
+          bind:tap="onClick"
+          catch:touchmove="noop"
+        />
+      </fbm-overlay>
+    </fbm-popup>
+  </fbm-dialog>
+</main>
+`;

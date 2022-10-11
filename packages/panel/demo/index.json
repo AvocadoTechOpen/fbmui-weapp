@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "fbm-panel": "../../panel/index",
+    "fbm-button": "../../button/index",
+    "demo-block": "../../../example/components/demo-block/index"
+  }
+}

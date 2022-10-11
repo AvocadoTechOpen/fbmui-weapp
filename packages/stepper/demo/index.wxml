@@ -1,0 +1,45 @@
+<fbm-cell center title="基础用法">
+  <fbm-stepper value="{{ 1 }}" />
+</fbm-cell>
+
+<fbm-cell center title="步长设置">
+  <fbm-stepper value="{{ 1 }}" step="2" />
+</fbm-cell>
+
+<fbm-cell center title="限制输入范围">
+  <fbm-stepper value="{{ 1 }}" min="5" max="8" />
+</fbm-cell>
+
+<fbm-cell center title="限制输入整数">
+  <fbm-stepper value="{{ 1 }}" integer />
+</fbm-cell>
+
+<fbm-cell center title="禁用状态">
+  <fbm-stepper value="{{ 1 }}" disabled />
+</fbm-cell>
+
+<fbm-cell center title="禁用长按">
+  <fbm-stepper value="{{ 1 }}" long-press="{{ false }}" />
+</fbm-cell>
+
+<fbm-cell center title="固定小数位数">
+  <fbm-stepper value="{{ 1 }}" step="0.2" decimal-length="{{ 1 }}" />
+</fbm-cell>
+
+<fbm-cell center title="异步变更">
+  <fbm-stepper
+    value="{{ value }}"
+    async-change
+    bind:change="onChange"
+  />
+</fbm-cell>
+
+<fbm-cell center title="自定义大小">
+  <fbm-stepper value="{{ 1 }}" input-width="40px" button-size="32px" />
+</fbm-cell>
+
+<fbm-cell center title="圆角风格">
+  <fbm-stepper value="{{ 1 }}" theme="round" button-size="22px" />
+</fbm-cell>
+
+<fbm-toast id="fbm-toast" />

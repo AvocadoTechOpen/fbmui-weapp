@@ -1,0 +1,228 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render demo and match snapshot 1`] = `
+<main>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix "
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        基础用法
+      </wx-view>
+      <fbm-count-down>
+        <wx-view
+          class="fbm-count-down"
+        >
+          30:00:00
+        </wx-view>
+      </fbm-count-down>
+    </wx-view>
+  </demo-block>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix "
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        自定义格式
+      </wx-view>
+      <fbm-count-down>
+        <wx-view
+          class="fbm-count-down"
+        >
+          01 天 06 时 00 分 00 秒
+        </wx-view>
+      </fbm-count-down>
+    </wx-view>
+  </demo-block>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix "
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        毫秒级渲染
+      </wx-view>
+      <fbm-count-down>
+        <wx-view
+          class="fbm-count-down"
+        >
+          30:00:00:000
+        </wx-view>
+      </fbm-count-down>
+    </wx-view>
+  </demo-block>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix "
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        自定义样式
+      </wx-view>
+      <fbm-count-down
+        bind:change="onChange"
+      >
+        <wx-view
+          class="fbm-count-down"
+        >
+          <wx-text
+            class="item"
+          >
+            
+          </wx-text>
+          <wx-text
+            class="item"
+          >
+            
+          </wx-text>
+          <wx-text
+            class="item"
+          >
+            
+          </wx-text>
+        </wx-view>
+      </fbm-count-down>
+    </wx-view>
+  </demo-block>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix "
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        手动控制
+      </wx-view>
+      <fbm-count-down
+        class="control-count-down"
+        bind:finish="finished"
+      >
+        <wx-view
+          class="fbm-count-down"
+        >
+          03:000
+        </wx-view>
+      </fbm-count-down>
+      <fbm-grid>
+        <wx-view
+          class="fbm-grid custom-class fbm-hairline--top"
+          style="padding-left:0px"
+        >
+          <fbm-grid-item
+            bind:click="start"
+          >
+            <wx-view
+              class="custom-class fbm-grid-item"
+              style="width:33.333333333333336%;padding-right:0px"
+              bind:tap="onClick"
+            >
+              <wx-view
+                class="content-class fbm-grid-item__content fbm-grid-item__content--center fbm-grid-item__content--clickable fbm-hairline--surround"
+                style=""
+              >
+                <wx-view
+                  class="fbm-grid-item__icon icon-class"
+                >
+                  <van-icon>
+                    <wx-view
+                      class="custom-class van-icon van-icon-play-circle-o"
+                      style=""
+                      bind:tap="onClick"
+                    />
+                  </van-icon>
+                </wx-view>
+                <wx-view
+                  class="fbm-grid-item__text text-class"
+                >
+                  <wx-text>
+                    开始
+                  </wx-text>
+                </wx-view>
+              </wx-view>
+            </wx-view>
+          </fbm-grid-item>
+          <fbm-grid-item
+            bind:click="pause"
+          >
+            <wx-view
+              class="custom-class fbm-grid-item"
+              style="width:33.333333333333336%;padding-right:0px"
+              bind:tap="onClick"
+            >
+              <wx-view
+                class="content-class fbm-grid-item__content fbm-grid-item__content--center fbm-grid-item__content--clickable fbm-hairline--surround"
+                style=""
+              >
+                <wx-view
+                  class="fbm-grid-item__icon icon-class"
+                >
+                  <van-icon>
+                    <wx-view
+                      class="custom-class van-icon van-icon-pause-circle-o"
+                      style=""
+                      bind:tap="onClick"
+                    />
+                  </van-icon>
+                </wx-view>
+                <wx-view
+                  class="fbm-grid-item__text text-class"
+                >
+                  <wx-text>
+                    暂停
+                  </wx-text>
+                </wx-view>
+              </wx-view>
+            </wx-view>
+          </fbm-grid-item>
+          <fbm-grid-item
+            bind:click="reset"
+          >
+            <wx-view
+              class="custom-class fbm-grid-item"
+              style="width:33.333333333333336%;padding-right:0px"
+              bind:tap="onClick"
+            >
+              <wx-view
+                class="content-class fbm-grid-item__content fbm-grid-item__content--center fbm-grid-item__content--clickable fbm-hairline--surround"
+                style=""
+              >
+                <wx-view
+                  class="fbm-grid-item__icon icon-class"
+                >
+                  <van-icon>
+                    <wx-view
+                      class="custom-class van-icon van-icon-replay"
+                      style=""
+                      bind:tap="onClick"
+                    />
+                  </van-icon>
+                </wx-view>
+                <wx-view
+                  class="fbm-grid-item__text text-class"
+                >
+                  <wx-text>
+                    重置
+                  </wx-text>
+                </wx-view>
+              </wx-view>
+            </wx-view>
+          </fbm-grid-item>
+        </wx-view>
+      </fbm-grid>
+    </wx-view>
+  </demo-block>
+  <fbm-toast
+    id="fbm-toast"
+  >
+    <fbm-transition
+      customClass="fbm-toast__container"
+    />
+  </fbm-toast>
+</main>
+`;

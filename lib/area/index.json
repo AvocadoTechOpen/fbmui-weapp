@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "fbm-picker": "../picker/index"
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "van-icon": "../icon/index",
-    "fbm-popup": "../popup/index",
-    "fbm-loading": "../loading/index"
-  }
-}

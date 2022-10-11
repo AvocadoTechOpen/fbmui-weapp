@@ -1,7 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "fbm-popup": "../popup/index",
-    "options": "./options"
-  }
-}

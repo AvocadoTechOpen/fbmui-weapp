@@ -1,8 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "fbm-button": "../../button/index",
-    "fbm-uploader": "../../uploader/index",
-    "demo-block": "../../../example/components/demo-block/index"
-  }
-}

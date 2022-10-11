@@ -1,8 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "van-icon": "../icon/index",
-    "fbm-sidebar": "../sidebar/index",
-    "fbm-sidebar-item": "../sidebar-item/index"
-  }
-}

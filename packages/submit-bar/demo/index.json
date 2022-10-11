@@ -1,9 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "fbm-tag": "../../tag/index",
-    "fbm-toast": "../../toast/index",
-    "fbm-submit-bar": "../../submit-bar/index",
-    "demo-block": "../../../example/components/demo-block/index"
-  }
-}

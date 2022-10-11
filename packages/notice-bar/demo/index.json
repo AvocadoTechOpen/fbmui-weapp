@@ -1,7 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "fbm-notice-bar": "../../notice-bar/index",
-    "demo-block": "../../../example/components/demo-block/index"
-  }
-}

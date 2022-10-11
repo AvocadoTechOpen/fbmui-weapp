@@ -1,8 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "fbm-popup": "../popup/index",
-    "fbm-cell": "../cell/index",
-    "van-icon": "../icon/index"
-  }
-}

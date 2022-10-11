@@ -1,8 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "fbm-row": "../../row/index",
-    "fbm-col": "../../col/index",
-    "demo-block": "../../../example/components/demo-block/index"
-  }
-}

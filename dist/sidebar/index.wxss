@@ -1,1 +1,0 @@
-@import '../common/index.wxss';.fbm-sidebar{width:var(--sidebar-width,80px)}

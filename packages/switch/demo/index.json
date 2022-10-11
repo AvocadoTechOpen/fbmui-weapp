@@ -1,8 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "fbm-switch": "../../switch/index",
-    "fbm-dialog": "../../dialog/index",
-    "demo-block": "../../../example/components/demo-block/index"
-  }
-}

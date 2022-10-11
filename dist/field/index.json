@@ -1,7 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "fbm-cell": "../cell/index",
-    "van-icon": "../icon/index"
-  }
-}

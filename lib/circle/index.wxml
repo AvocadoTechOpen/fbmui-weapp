@@ -1,9 +1,0 @@
-<wxs src="../wxs/utils.wxs" module="utils" />
-
-<view class="fbm-circle">
-  <canvas class="fbm-circle__canvas" type="{{ type }}" style="width: {{ utils.addUnit(size) }};height:{{ utils.addUnit(size) }}" id="fbm-circle" canvas-id="fbm-circle"></canvas>
-  <view wx:if="{{ !text }}" class="fbm-circle__text">
-    <slot></slot>
-  </view>
-  <cover-view wx:else class="fbm-circle__text">{{ text }}</cover-view>
-</view>

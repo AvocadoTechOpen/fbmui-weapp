@@ -1,8 +1,0 @@
-<wxs src="./index.wxs" module="computed" />
-
-<view
-  class="fbm-grid custom-class {{ border && !gutter ? 'fbm-hairline--top' : '' }}"
-  style="{{ computed.rootStyle({ gutter }) }}"
->
-  <slot />
-</view>

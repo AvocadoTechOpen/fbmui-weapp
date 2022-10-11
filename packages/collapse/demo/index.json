@@ -1,9 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "fbm-collapse": "../../collapse/index",
-    "fbm-collapse-item": "../../collapse-item/index",
-    "fbm-toast": "../../toast/index",
-    "demo-block": "../../../example/components/demo-block/index"
-  }
-}

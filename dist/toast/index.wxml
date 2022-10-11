@@ -1,0 +1,36 @@
+<fbm-overlay
+  wx:if="{{ mask || forbidClick }}"
+  show="{{ show }}"
+  z-index="{{ zIndex }}"
+  custom-style="{{ mask ? '' : 'background-color: transparent;' }}"
+/>
+<fbm-transition
+  show="{{ show }}"
+  custom-style="z-index: {{ zIndex }}"
+  custom-class="fbm-toast__container"
+>
+  <view
+    class="fbm-toast fbm-toast--{{ (type === 'text' || type === 'html') ? 'text' : 'icon' }} fbm-toast--{{ position }}"
+    catch:touchmove="noop"
+  >
+    <!-- text only -->
+    <text wx:if="{{ type === 'text' }}">{{ message }}</text>
+
+    <!-- html only -->
+    <rich-text wx:elif="{{ type === 'html' }}" nodes="{{ message }}"></rich-text>
+
+    <!-- with icon -->
+    <block wx:else>
+      <fbm-loading
+        wx:if="{{ type === 'loading' }}"
+        color="white"
+        type="{{ loadingType }}"
+        custom-class="fbm-toast__loading"
+      />
+      <van-icon wx:else class="fbm-toast__icon" name="{{ type }}" />
+      <text wx:if="{{ message }}" class="fbm-toast__text">{{ message }}</text>
+    </block>
+
+    <slot />
+  </view>
+</fbm-transition>

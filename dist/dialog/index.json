@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "fbm-popup": "../popup/index",
+    "fbm-button": "../button/index",
+    "fbm-goods-action": "../goods-action/index",
+    "fbm-goods-action-button": "../goods-action-button/index"
+  }
+}

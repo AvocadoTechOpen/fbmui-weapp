@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render demo and match snapshot 1`] = `
+<main>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix demo-block--padding"
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        基础用法
+      </wx-view>
+      <fbm-row>
+        <wx-view
+          class="fbm-row custom-class"
+          style=""
+        >
+          <fbm-col
+            customClass="dark"
+          >
+            <wx-view
+              class="custom-class fbm-col fbm-col--8 "
+              style=""
+            >
+              span: 8
+            </wx-view>
+          </fbm-col>
+          <fbm-col
+            customClass="light"
+          >
+            <wx-view
+              class="custom-class fbm-col fbm-col--8 "
+              style=""
+            >
+              span: 8
+            </wx-view>
+          </fbm-col>
+          <fbm-col
+            customClass="dark"
+          >
+            <wx-view
+              class="custom-class fbm-col fbm-col--8 "
+              style=""
+            >
+              span: 8
+            </wx-view>
+          </fbm-col>
+        </wx-view>
+      </fbm-row>
+      <fbm-row>
+        <wx-view
+          class="fbm-row custom-class"
+          style=""
+        >
+          <fbm-col
+            customClass="dark"
+          >
+            <wx-view
+              class="custom-class fbm-col fbm-col--4 "
+              style=""
+            >
+              span: 4
+            </wx-view>
+          </fbm-col>
+          <fbm-col
+            customClass="light"
+          >
+            <wx-view
+              class="custom-class fbm-col fbm-col--10 fbm-col--offset-4"
+              style=""
+            >
+              offset: 4, span: 10
+            </wx-view>
+          </fbm-col>
+        </wx-view>
+      </fbm-row>
+      <fbm-row>
+        <wx-view
+          class="fbm-row custom-class"
+          style=""
+        >
+          <fbm-col
+            customClass="dark"
+          >
+            <wx-view
+              class="custom-class fbm-col fbm-col--12 fbm-col--offset-12"
+              style=""
+            >
+              offset: 12, span: 12
+            </wx-view>
+          </fbm-col>
+        </wx-view>
+      </fbm-row>
+    </wx-view>
+  </demo-block>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix demo-block--padding"
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        在列元素之间增加间距
+      </wx-view>
+      <fbm-row>
+        <wx-view
+          class="fbm-row custom-class"
+          style="margin-right:-10px;margin-left:-10px"
+        >
+          <fbm-col
+            customClass="dark"
+          >
+            <wx-view
+              class="custom-class fbm-col fbm-col--8 "
+              style="padding-right:10px;padding-left:10px"
+            >
+              span: 8
+            </wx-view>
+          </fbm-col>
+          <fbm-col
+            customClass="light"
+          >
+            <wx-view
+              class="custom-class fbm-col fbm-col--8 "
+              style="padding-right:10px;padding-left:10px"
+            >
+              span: 8
+            </wx-view>
+          </fbm-col>
+          <fbm-col
+            customClass="dark"
+          >
+            <wx-view
+              class="custom-class fbm-col fbm-col--8 "
+              style="padding-right:10px;padding-left:10px"
+            >
+              span: 8
+            </wx-view>
+          </fbm-col>
+        </wx-view>
+      </fbm-row>
+    </wx-view>
+  </demo-block>
+</main>
+`;

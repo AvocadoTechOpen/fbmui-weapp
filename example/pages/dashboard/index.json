@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Fbmui Weapp",
+  "usingComponents": {
+    "demo-home": "../../components/demo-home/index"
+  }
+}

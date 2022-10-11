@@ -1,0 +1,3 @@
+<view class="fbm-sidebar custom-class">
+  <slot />
+</view>

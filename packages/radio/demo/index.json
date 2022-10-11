@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "fbm-radio": "../../radio/index",
+    "fbm-radio-group": "../../radio-group/index",
+    "fbm-cell": "../../cell/index",
+    "fbm-cell-group": "../../cell-group/index",
+    "demo-block": "../../../example/components/demo-block/index"
+  }
+}

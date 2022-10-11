@@ -1,0 +1,926 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render demo and match snapshot 1`] = `
+<main>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix demo-block--padding"
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        基础用法
+      </wx-view>
+      <fbm-row>
+        <wx-view
+          class="fbm-row custom-class"
+          style=""
+        >
+          <fbm-image>
+            <wx-view
+              class="custom-class fbm-image"
+              style="width:100px;height:100px"
+              bind:tap="onClick"
+            >
+              <wx-image
+                class="image-class fbm-image__img"
+                lazyLoad="{{false}}"
+                mode="scaleToFill"
+                showMenuByLongpress="{{false}}"
+                src="https://img.yzcdn.cn/vant/cat.jpeg"
+                bind:error="onError"
+                bind:load="onLoad"
+              />
+              <wx-view
+                class="loading-class fbm-image__loading"
+              >
+                <van-icon
+                  customClass="fbm-image__loading-icon"
+                >
+                  <wx-view
+                    class="custom-class van-icon van-icon-photo"
+                    style=""
+                    bind:tap="onClick"
+                  />
+                </van-icon>
+              </wx-view>
+            </wx-view>
+          </fbm-image>
+        </wx-view>
+      </fbm-row>
+    </wx-view>
+  </demo-block>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix demo-block--padding"
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        填充模式
+      </wx-view>
+      <fbm-row>
+        <wx-view
+          class="fbm-row custom-class"
+          style="margin-right:-10px;margin-left:-10px"
+        >
+          <fbm-col>
+            <wx-view
+              class="custom-class fbm-col fbm-col--8 "
+              style="padding-right:10px;padding-left:10px"
+            >
+              <fbm-image>
+                <wx-view
+                  class="custom-class fbm-image"
+                  style="width:100%;height:27vw"
+                  bind:tap="onClick"
+                >
+                  <wx-image
+                    class="image-class fbm-image__img"
+                    lazyLoad="{{false}}"
+                    mode="aspectFit"
+                    showMenuByLongpress="{{false}}"
+                    src="https://img.yzcdn.cn/vant/cat.jpeg"
+                    bind:error="onError"
+                    bind:load="onLoad"
+                  />
+                  <wx-view
+                    class="loading-class fbm-image__loading"
+                  >
+                    <van-icon
+                      customClass="fbm-image__loading-icon"
+                    >
+                      <wx-view
+                        class="custom-class van-icon van-icon-photo"
+                        style=""
+                        bind:tap="onClick"
+                      />
+                    </van-icon>
+                  </wx-view>
+                </wx-view>
+              </fbm-image>
+              <wx-view
+                class="text"
+              >
+                contain
+              </wx-view>
+            </wx-view>
+          </fbm-col>
+          <fbm-col>
+            <wx-view
+              class="custom-class fbm-col fbm-col--8 "
+              style="padding-right:10px;padding-left:10px"
+            >
+              <fbm-image>
+                <wx-view
+                  class="custom-class fbm-image"
+                  style="width:100%;height:27vw"
+                  bind:tap="onClick"
+                >
+                  <wx-image
+                    class="image-class fbm-image__img"
+                    lazyLoad="{{false}}"
+                    mode="aspectFill"
+                    showMenuByLongpress="{{false}}"
+                    src="https://img.yzcdn.cn/vant/cat.jpeg"
+                    bind:error="onError"
+                    bind:load="onLoad"
+                  />
+                  <wx-view
+                    class="loading-class fbm-image__loading"
+                  >
+                    <van-icon
+                      customClass="fbm-image__loading-icon"
+                    >
+                      <wx-view
+                        class="custom-class van-icon van-icon-photo"
+                        style=""
+                        bind:tap="onClick"
+                      />
+                    </van-icon>
+                  </wx-view>
+                </wx-view>
+              </fbm-image>
+              <wx-view
+                class="text"
+              >
+                cover
+              </wx-view>
+            </wx-view>
+          </fbm-col>
+          <fbm-col>
+            <wx-view
+              class="custom-class fbm-col fbm-col--8 "
+              style="padding-right:10px;padding-left:10px"
+            >
+              <fbm-image>
+                <wx-view
+                  class="custom-class fbm-image"
+                  style="width:100%;height:27vw"
+                  bind:tap="onClick"
+                >
+                  <wx-image
+                    class="image-class fbm-image__img"
+                    lazyLoad="{{false}}"
+                    mode="scaleToFill"
+                    showMenuByLongpress="{{false}}"
+                    src="https://img.yzcdn.cn/vant/cat.jpeg"
+                    bind:error="onError"
+                    bind:load="onLoad"
+                  />
+                  <wx-view
+                    class="loading-class fbm-image__loading"
+                  >
+                    <van-icon
+                      customClass="fbm-image__loading-icon"
+                    >
+                      <wx-view
+                        class="custom-class van-icon van-icon-photo"
+                        style=""
+                        bind:tap="onClick"
+                      />
+                    </van-icon>
+                  </wx-view>
+                </wx-view>
+              </fbm-image>
+              <wx-view
+                class="text"
+              >
+                fill
+              </wx-view>
+            </wx-view>
+          </fbm-col>
+          <fbm-col>
+            <wx-view
+              class="custom-class fbm-col fbm-col--8 "
+              style="padding-right:10px;padding-left:10px"
+            >
+              <fbm-image>
+                <wx-view
+                  class="custom-class fbm-image"
+                  style="width:100%;height:27vw"
+                  bind:tap="onClick"
+                >
+                  <wx-image
+                    class="image-class fbm-image__img"
+                    lazyLoad="{{false}}"
+                    mode="center"
+                    showMenuByLongpress="{{false}}"
+                    src="https://img.yzcdn.cn/vant/cat.jpeg"
+                    bind:error="onError"
+                    bind:load="onLoad"
+                  />
+                  <wx-view
+                    class="loading-class fbm-image__loading"
+                  >
+                    <van-icon
+                      customClass="fbm-image__loading-icon"
+                    >
+                      <wx-view
+                        class="custom-class van-icon van-icon-photo"
+                        style=""
+                        bind:tap="onClick"
+                      />
+                    </van-icon>
+                  </wx-view>
+                </wx-view>
+              </fbm-image>
+              <wx-view
+                class="text"
+              >
+                none
+              </wx-view>
+            </wx-view>
+          </fbm-col>
+          <fbm-col>
+            <wx-view
+              class="custom-class fbm-col fbm-col--8 "
+              style="padding-right:10px;padding-left:10px"
+            >
+              <fbm-image>
+                <wx-view
+                  class="custom-class fbm-image"
+                  style="width:100%;height:27vw"
+                  bind:tap="onClick"
+                >
+                  <wx-image
+                    class="image-class fbm-image__img"
+                    lazyLoad="{{false}}"
+                    mode=""
+                    showMenuByLongpress="{{false}}"
+                    src="https://img.yzcdn.cn/vant/cat.jpeg"
+                    bind:error="onError"
+                    bind:load="onLoad"
+                  />
+                  <wx-view
+                    class="loading-class fbm-image__loading"
+                  >
+                    <van-icon
+                      customClass="fbm-image__loading-icon"
+                    >
+                      <wx-view
+                        class="custom-class van-icon van-icon-photo"
+                        style=""
+                        bind:tap="onClick"
+                      />
+                    </van-icon>
+                  </wx-view>
+                </wx-view>
+              </fbm-image>
+              <wx-view
+                class="text"
+              >
+                scale-down
+              </wx-view>
+            </wx-view>
+          </fbm-col>
+          <fbm-col>
+            <wx-view
+              class="custom-class fbm-col fbm-col--8 "
+              style="padding-right:10px;padding-left:10px"
+            >
+              <fbm-image>
+                <wx-view
+                  class="custom-class fbm-image"
+                  style="width:100%;height:27vw"
+                  bind:tap="onClick"
+                >
+                  <wx-image
+                    class="image-class fbm-image__img"
+                    lazyLoad="{{false}}"
+                    mode="widthFix"
+                    showMenuByLongpress="{{false}}"
+                    src="https://img.yzcdn.cn/vant/cat.jpeg"
+                    bind:error="onError"
+                    bind:load="onLoad"
+                  />
+                  <wx-view
+                    class="loading-class fbm-image__loading"
+                  >
+                    <van-icon
+                      customClass="fbm-image__loading-icon"
+                    >
+                      <wx-view
+                        class="custom-class van-icon van-icon-photo"
+                        style=""
+                        bind:tap="onClick"
+                      />
+                    </van-icon>
+                  </wx-view>
+                </wx-view>
+              </fbm-image>
+              <wx-view
+                class="text"
+              >
+                widthFix
+              </wx-view>
+            </wx-view>
+          </fbm-col>
+          <fbm-col>
+            <wx-view
+              class="custom-class fbm-col fbm-col--8 "
+              style="padding-right:10px;padding-left:10px"
+            >
+              <fbm-image>
+                <wx-view
+                  class="custom-class fbm-image"
+                  style="width:100%;height:27vw"
+                  bind:tap="onClick"
+                >
+                  <wx-image
+                    class="image-class fbm-image__img"
+                    lazyLoad="{{false}}"
+                    mode="heightFix"
+                    showMenuByLongpress="{{false}}"
+                    src="https://img.yzcdn.cn/vant/cat.jpeg"
+                    bind:error="onError"
+                    bind:load="onLoad"
+                  />
+                  <wx-view
+                    class="loading-class fbm-image__loading"
+                  >
+                    <van-icon
+                      customClass="fbm-image__loading-icon"
+                    >
+                      <wx-view
+                        class="custom-class van-icon van-icon-photo"
+                        style=""
+                        bind:tap="onClick"
+                      />
+                    </van-icon>
+                  </wx-view>
+                </wx-view>
+              </fbm-image>
+              <wx-view
+                class="text"
+              >
+                heightFix
+              </wx-view>
+            </wx-view>
+          </fbm-col>
+        </wx-view>
+      </fbm-row>
+    </wx-view>
+  </demo-block>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix demo-block--padding"
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        圆形图片
+      </wx-view>
+      <fbm-row>
+        <wx-view
+          class="fbm-row custom-class"
+          style="margin-right:-10px;margin-left:-10px"
+        >
+          <fbm-col>
+            <wx-view
+              class="custom-class fbm-col fbm-col--8 "
+              style="padding-right:10px;padding-left:10px"
+            >
+              <fbm-image>
+                <wx-view
+                  class="custom-class fbm-image fbm-image--round"
+                  style="width:100%;height:27vw"
+                  bind:tap="onClick"
+                >
+                  <wx-image
+                    class="image-class fbm-image__img"
+                    lazyLoad="{{false}}"
+                    mode="aspectFit"
+                    showMenuByLongpress="{{false}}"
+                    src="https://img.yzcdn.cn/vant/cat.jpeg"
+                    bind:error="onError"
+                    bind:load="onLoad"
+                  />
+                  <wx-view
+                    class="loading-class fbm-image__loading"
+                  >
+                    <van-icon
+                      customClass="fbm-image__loading-icon"
+                    >
+                      <wx-view
+                        class="custom-class van-icon van-icon-photo"
+                        style=""
+                        bind:tap="onClick"
+                      />
+                    </van-icon>
+                  </wx-view>
+                </wx-view>
+              </fbm-image>
+              <wx-view
+                class="text"
+              >
+                contain
+              </wx-view>
+            </wx-view>
+          </fbm-col>
+          <fbm-col>
+            <wx-view
+              class="custom-class fbm-col fbm-col--8 "
+              style="padding-right:10px;padding-left:10px"
+            >
+              <fbm-image>
+                <wx-view
+                  class="custom-class fbm-image fbm-image--round"
+                  style="width:100%;height:27vw"
+                  bind:tap="onClick"
+                >
+                  <wx-image
+                    class="image-class fbm-image__img"
+                    lazyLoad="{{false}}"
+                    mode="aspectFill"
+                    showMenuByLongpress="{{false}}"
+                    src="https://img.yzcdn.cn/vant/cat.jpeg"
+                    bind:error="onError"
+                    bind:load="onLoad"
+                  />
+                  <wx-view
+                    class="loading-class fbm-image__loading"
+                  >
+                    <van-icon
+                      customClass="fbm-image__loading-icon"
+                    >
+                      <wx-view
+                        class="custom-class van-icon van-icon-photo"
+                        style=""
+                        bind:tap="onClick"
+                      />
+                    </van-icon>
+                  </wx-view>
+                </wx-view>
+              </fbm-image>
+              <wx-view
+                class="text"
+              >
+                cover
+              </wx-view>
+            </wx-view>
+          </fbm-col>
+          <fbm-col>
+            <wx-view
+              class="custom-class fbm-col fbm-col--8 "
+              style="padding-right:10px;padding-left:10px"
+            >
+              <fbm-image>
+                <wx-view
+                  class="custom-class fbm-image fbm-image--round"
+                  style="width:100%;height:27vw"
+                  bind:tap="onClick"
+                >
+                  <wx-image
+                    class="image-class fbm-image__img"
+                    lazyLoad="{{false}}"
+                    mode="scaleToFill"
+                    showMenuByLongpress="{{false}}"
+                    src="https://img.yzcdn.cn/vant/cat.jpeg"
+                    bind:error="onError"
+                    bind:load="onLoad"
+                  />
+                  <wx-view
+                    class="loading-class fbm-image__loading"
+                  >
+                    <van-icon
+                      customClass="fbm-image__loading-icon"
+                    >
+                      <wx-view
+                        class="custom-class van-icon van-icon-photo"
+                        style=""
+                        bind:tap="onClick"
+                      />
+                    </van-icon>
+                  </wx-view>
+                </wx-view>
+              </fbm-image>
+              <wx-view
+                class="text"
+              >
+                fill
+              </wx-view>
+            </wx-view>
+          </fbm-col>
+          <fbm-col>
+            <wx-view
+              class="custom-class fbm-col fbm-col--8 "
+              style="padding-right:10px;padding-left:10px"
+            >
+              <fbm-image>
+                <wx-view
+                  class="custom-class fbm-image fbm-image--round"
+                  style="width:100%;height:27vw"
+                  bind:tap="onClick"
+                >
+                  <wx-image
+                    class="image-class fbm-image__img"
+                    lazyLoad="{{false}}"
+                    mode="center"
+                    showMenuByLongpress="{{false}}"
+                    src="https://img.yzcdn.cn/vant/cat.jpeg"
+                    bind:error="onError"
+                    bind:load="onLoad"
+                  />
+                  <wx-view
+                    class="loading-class fbm-image__loading"
+                  >
+                    <van-icon
+                      customClass="fbm-image__loading-icon"
+                    >
+                      <wx-view
+                        class="custom-class van-icon van-icon-photo"
+                        style=""
+                        bind:tap="onClick"
+                      />
+                    </van-icon>
+                  </wx-view>
+                </wx-view>
+              </fbm-image>
+              <wx-view
+                class="text"
+              >
+                none
+              </wx-view>
+            </wx-view>
+          </fbm-col>
+          <fbm-col>
+            <wx-view
+              class="custom-class fbm-col fbm-col--8 "
+              style="padding-right:10px;padding-left:10px"
+            >
+              <fbm-image>
+                <wx-view
+                  class="custom-class fbm-image fbm-image--round"
+                  style="width:100%;height:27vw"
+                  bind:tap="onClick"
+                >
+                  <wx-image
+                    class="image-class fbm-image__img"
+                    lazyLoad="{{false}}"
+                    mode=""
+                    showMenuByLongpress="{{false}}"
+                    src="https://img.yzcdn.cn/vant/cat.jpeg"
+                    bind:error="onError"
+                    bind:load="onLoad"
+                  />
+                  <wx-view
+                    class="loading-class fbm-image__loading"
+                  >
+                    <van-icon
+                      customClass="fbm-image__loading-icon"
+                    >
+                      <wx-view
+                        class="custom-class van-icon van-icon-photo"
+                        style=""
+                        bind:tap="onClick"
+                      />
+                    </van-icon>
+                  </wx-view>
+                </wx-view>
+              </fbm-image>
+              <wx-view
+                class="text"
+              >
+                scale-down
+              </wx-view>
+            </wx-view>
+          </fbm-col>
+          <fbm-col>
+            <wx-view
+              class="custom-class fbm-col fbm-col--8 "
+              style="padding-right:10px;padding-left:10px"
+            >
+              <fbm-image>
+                <wx-view
+                  class="custom-class fbm-image fbm-image--round"
+                  style="width:100%;height:27vw"
+                  bind:tap="onClick"
+                >
+                  <wx-image
+                    class="image-class fbm-image__img"
+                    lazyLoad="{{false}}"
+                    mode="widthFix"
+                    showMenuByLongpress="{{false}}"
+                    src="https://img.yzcdn.cn/vant/cat.jpeg"
+                    bind:error="onError"
+                    bind:load="onLoad"
+                  />
+                  <wx-view
+                    class="loading-class fbm-image__loading"
+                  >
+                    <van-icon
+                      customClass="fbm-image__loading-icon"
+                    >
+                      <wx-view
+                        class="custom-class van-icon van-icon-photo"
+                        style=""
+                        bind:tap="onClick"
+                      />
+                    </van-icon>
+                  </wx-view>
+                </wx-view>
+              </fbm-image>
+              <wx-view
+                class="text"
+              >
+                widthFix
+              </wx-view>
+            </wx-view>
+          </fbm-col>
+          <fbm-col>
+            <wx-view
+              class="custom-class fbm-col fbm-col--8 "
+              style="padding-right:10px;padding-left:10px"
+            >
+              <fbm-image>
+                <wx-view
+                  class="custom-class fbm-image fbm-image--round"
+                  style="width:100%;height:27vw"
+                  bind:tap="onClick"
+                >
+                  <wx-image
+                    class="image-class fbm-image__img"
+                    lazyLoad="{{false}}"
+                    mode="heightFix"
+                    showMenuByLongpress="{{false}}"
+                    src="https://img.yzcdn.cn/vant/cat.jpeg"
+                    bind:error="onError"
+                    bind:load="onLoad"
+                  />
+                  <wx-view
+                    class="loading-class fbm-image__loading"
+                  >
+                    <van-icon
+                      customClass="fbm-image__loading-icon"
+                    >
+                      <wx-view
+                        class="custom-class van-icon van-icon-photo"
+                        style=""
+                        bind:tap="onClick"
+                      />
+                    </van-icon>
+                  </wx-view>
+                </wx-view>
+              </fbm-image>
+              <wx-view
+                class="text"
+              >
+                heightFix
+              </wx-view>
+            </wx-view>
+          </fbm-col>
+        </wx-view>
+      </fbm-row>
+    </wx-view>
+  </demo-block>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix demo-block--padding"
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        加载中提示
+      </wx-view>
+      <fbm-row>
+        <wx-view
+          class="fbm-row custom-class"
+          style="margin-right:-10px;margin-left:-10px"
+        >
+          <fbm-col>
+            <wx-view
+              class="custom-class fbm-col fbm-col--8 "
+              style="padding-right:10px;padding-left:10px"
+            >
+              <fbm-image>
+                <wx-view
+                  class="custom-class fbm-image"
+                  style="width:100%;height:27vw"
+                  bind:tap="onClick"
+                >
+                  <wx-image
+                    class="image-class fbm-image__img"
+                    lazyLoad="{{false}}"
+                    mode="scaleToFill"
+                    showMenuByLongpress="{{false}}"
+                    src=""
+                    bind:error="onError"
+                    bind:load="onLoad"
+                  />
+                  <wx-view
+                    class="loading-class fbm-image__loading"
+                  >
+                    <van-icon
+                      customClass="fbm-image__loading-icon"
+                    >
+                      <wx-view
+                        class="custom-class van-icon van-icon-photo"
+                        style=""
+                        bind:tap="onClick"
+                      />
+                    </van-icon>
+                  </wx-view>
+                </wx-view>
+              </fbm-image>
+              <wx-view
+                class="text"
+              >
+                默认提示
+              </wx-view>
+            </wx-view>
+          </fbm-col>
+          <fbm-col>
+            <wx-view
+              class="custom-class fbm-col fbm-col--8 "
+              style="padding-right:10px;padding-left:10px"
+            >
+              <fbm-image>
+                <wx-view
+                  class="custom-class fbm-image"
+                  style="width:100%;height:27vw"
+                  bind:tap="onClick"
+                >
+                  <wx-image
+                    class="image-class fbm-image__img"
+                    lazyLoad="{{false}}"
+                    mode="scaleToFill"
+                    showMenuByLongpress="{{false}}"
+                    src=""
+                    bind:error="onError"
+                    bind:load="onLoad"
+                  />
+                  <wx-view
+                    class="loading-class fbm-image__loading"
+                  >
+                    <fbm-loading
+                      slot="loading"
+                    >
+                      <wx-view
+                        class="custom-class fbm-loading fbm-loading--vertical"
+                      >
+                        <wx-view
+                          class="fbm-loading__spinner fbm-loading__spinner--spinner"
+                          style="width:20px;height:20px"
+                        >
+                          <wx-view
+                            class="fbm-loading__dot"
+                          />
+                          <wx-view
+                            class="fbm-loading__dot"
+                          />
+                          <wx-view
+                            class="fbm-loading__dot"
+                          />
+                          <wx-view
+                            class="fbm-loading__dot"
+                          />
+                          <wx-view
+                            class="fbm-loading__dot"
+                          />
+                          <wx-view
+                            class="fbm-loading__dot"
+                          />
+                          <wx-view
+                            class="fbm-loading__dot"
+                          />
+                          <wx-view
+                            class="fbm-loading__dot"
+                          />
+                          <wx-view
+                            class="fbm-loading__dot"
+                          />
+                          <wx-view
+                            class="fbm-loading__dot"
+                          />
+                          <wx-view
+                            class="fbm-loading__dot"
+                          />
+                          <wx-view
+                            class="fbm-loading__dot"
+                          />
+                        </wx-view>
+                        <wx-view
+                          class="fbm-loading__text"
+                          style=""
+                        />
+                      </wx-view>
+                    </fbm-loading>
+                  </wx-view>
+                </wx-view>
+              </fbm-image>
+              <wx-view
+                class="text"
+              >
+                自定义提示
+              </wx-view>
+            </wx-view>
+          </fbm-col>
+        </wx-view>
+      </fbm-row>
+    </wx-view>
+  </demo-block>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix demo-block--padding"
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        加载失败提示
+      </wx-view>
+      <fbm-row>
+        <wx-view
+          class="fbm-row custom-class"
+          style="margin-right:-10px;margin-left:-10px"
+        >
+          <fbm-col>
+            <wx-view
+              class="custom-class fbm-col fbm-col--8 "
+              style="padding-right:10px;padding-left:10px"
+            >
+              <fbm-image>
+                <wx-view
+                  class="custom-class fbm-image"
+                  style="width:100%;height:27vw"
+                  bind:tap="onClick"
+                >
+                  <wx-image
+                    class="image-class fbm-image__img"
+                    lazyLoad="{{false}}"
+                    mode="scaleToFill"
+                    showMenuByLongpress="{{false}}"
+                    src="x"
+                    bind:error="onError"
+                    bind:load="onLoad"
+                  />
+                  <wx-view
+                    class="loading-class fbm-image__loading"
+                  >
+                    <van-icon
+                      customClass="fbm-image__loading-icon"
+                    >
+                      <wx-view
+                        class="custom-class van-icon van-icon-photo"
+                        style=""
+                        bind:tap="onClick"
+                      />
+                    </van-icon>
+                  </wx-view>
+                </wx-view>
+              </fbm-image>
+              <wx-view
+                class="text"
+              >
+                默认提示
+              </wx-view>
+            </wx-view>
+          </fbm-col>
+          <fbm-col>
+            <wx-view
+              class="custom-class fbm-col fbm-col--8 "
+              style="padding-right:10px;padding-left:10px"
+            >
+              <fbm-image>
+                <wx-view
+                  class="custom-class fbm-image"
+                  style="width:100%;height:27vw"
+                  bind:tap="onClick"
+                >
+                  <wx-image
+                    class="image-class fbm-image__img"
+                    lazyLoad="{{false}}"
+                    mode="scaleToFill"
+                    showMenuByLongpress="{{false}}"
+                    src="x"
+                    bind:error="onError"
+                    bind:load="onLoad"
+                  />
+                  <wx-view
+                    class="loading-class fbm-image__loading"
+                  >
+                    <van-icon
+                      customClass="fbm-image__loading-icon"
+                    >
+                      <wx-view
+                        class="custom-class van-icon van-icon-photo"
+                        style=""
+                        bind:tap="onClick"
+                      />
+                    </van-icon>
+                  </wx-view>
+                </wx-view>
+              </fbm-image>
+              <wx-view
+                class="text"
+              >
+                自定义提示
+              </wx-view>
+            </wx-view>
+          </fbm-col>
+        </wx-view>
+      </fbm-row>
+    </wx-view>
+  </demo-block>
+</main>
+`;

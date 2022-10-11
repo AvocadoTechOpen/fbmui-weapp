@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "fbm-button": "../../button/index",
+    "fbm-action-sheet": "../../action-sheet/index",
+    "demo-block": "../../../example/components/demo-block/index"
+  }
+}

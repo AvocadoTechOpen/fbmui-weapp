@@ -1,0 +1,11 @@
+{
+  "component": true,
+  "usingComponents": {
+    "fbm-cell": "../../cell/index",
+    "fbm-dialog": "../../dialog/index",
+    "fbm-notify": "../../notify/index",
+    "fbm-swipe-cell": "../../swipe-cell/index",
+    "fbm-cell-group": "../../cell-group/index",
+    "demo-block": "../../../example/components/demo-block/index"
+  }
+}

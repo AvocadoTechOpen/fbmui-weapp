@@ -1,0 +1,11 @@
+{
+  "component": true,
+  "usingComponents": {
+    "fbm-tab": "../../tab/index",
+    "fbm-tabs": "../../tabs/index",
+    "fbm-cell": "../../cell/index",
+    "fbm-index-bar": "../../index-bar/index",
+    "fbm-index-anchor": "../../index-anchor/index",
+    "demo-block": "../../../example/components/demo-block/index"
+  }
+}

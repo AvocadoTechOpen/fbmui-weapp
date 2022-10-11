@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "fbm-toast": "../../toast/index",
+    "fbm-goods-action": "../../goods-action/index",
+    "fbm-goods-action-icon": "../../goods-action-icon/index",
+    "fbm-goods-action-button": "../../goods-action-button/index",
+    "demo-block": "../../../example/components/demo-block/index"
+  }
+}

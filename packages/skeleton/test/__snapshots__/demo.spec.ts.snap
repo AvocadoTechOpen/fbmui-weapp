@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render demo and match snapshot 1`] = `
+<main>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix "
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        基础用法
+      </wx-view>
+      <fbm-skeleton>
+        <wx-view
+          class="custom-class fbm-skeleton fbm-skeleton--animate"
+        >
+          <wx-view
+            class="fbm-skeleton__content"
+          >
+            <wx-view
+              class="title-class fbm-skeleton__title"
+              style="width:40%"
+            />
+            <wx-view
+              class="row-class fbm-skeleton__row"
+              style="width:100%"
+            />
+            <wx-view
+              class="row-class fbm-skeleton__row"
+              style="width:100%"
+            />
+            <wx-view
+              class="row-class fbm-skeleton__row"
+              style="width:80%"
+            />
+          </wx-view>
+        </wx-view>
+      </fbm-skeleton>
+    </wx-view>
+  </demo-block>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix "
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        显示头像
+      </wx-view>
+      <fbm-skeleton>
+        <wx-view
+          class="custom-class fbm-skeleton fbm-skeleton--animate"
+        >
+          <wx-view
+            class="avatar-class fbm-skeleton__avatar fbm-skeleton__avatar--round"
+            style="width:32px;height:32px"
+          />
+          <wx-view
+            class="fbm-skeleton__content"
+          >
+            <wx-view
+              class="title-class fbm-skeleton__title"
+              style="width:40%"
+            />
+            <wx-view
+              class="row-class fbm-skeleton__row"
+              style="width:100%"
+            />
+            <wx-view
+              class="row-class fbm-skeleton__row"
+              style="width:100%"
+            />
+            <wx-view
+              class="row-class fbm-skeleton__row"
+              style="width:100%"
+            />
+          </wx-view>
+        </wx-view>
+      </fbm-skeleton>
+    </wx-view>
+  </demo-block>
+  <demo-block>
+    <wx-view
+      class="custom-class demo-block fbm-clearfix "
+    >
+      <wx-view
+        class="demo-block__title"
+      >
+        展示子组件
+      </wx-view>
+      <fbm-switch
+        bind:change="onChange"
+      >
+        <wx-view
+          class="fbm-switch custom-class"
+          style="font-size:24px"
+          bind:tap="onClick"
+        >
+          <wx-view
+            class="fbm-switch__node node-class"
+          />
+        </wx-view>
+      </fbm-switch>
+      <fbm-skeleton>
+        <wx-view
+          class="custom-class fbm-skeleton fbm-skeleton--animate"
+        >
+          <wx-view
+            class="avatar-class fbm-skeleton__avatar fbm-skeleton__avatar--round"
+            style="width:32px;height:32px"
+          />
+          <wx-view
+            class="fbm-skeleton__content"
+          >
+            <wx-view
+              class="title-class fbm-skeleton__title"
+              style="width:40%"
+            />
+            <wx-view
+              class="row-class fbm-skeleton__row"
+              style="width:100%"
+            />
+            <wx-view
+              class="row-class fbm-skeleton__row"
+              style="width:100%"
+            />
+            <wx-view
+              class="row-class fbm-skeleton__row"
+              style="width:100%"
+            />
+          </wx-view>
+        </wx-view>
+      </fbm-skeleton>
+    </wx-view>
+  </demo-block>
+</main>
+`;

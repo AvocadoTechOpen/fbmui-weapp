@@ -1,0 +1,126 @@
+<demo-block title="基本用法" padding>
+  <fbm-radio-group
+    value="{{ radio1 }}"
+    data-key="radio1"
+    bind:change="onChange"
+  >
+    <fbm-radio name="1" custom-class="demo-radio">单选框 1</fbm-radio>
+    <fbm-radio name="2">单选框 2</fbm-radio>
+  </fbm-radio-group>
+</demo-block>
+
+<demo-block title="水平排列" padding>
+  <fbm-radio-group
+    value="{{ radio1 }}"
+    data-key="radio1"
+    bind:change="onChange"
+    direction="horizontal"
+  >
+    <fbm-radio name="1">单选框 1</fbm-radio>
+    <fbm-radio name="2">单选框 2</fbm-radio>
+  </fbm-radio-group>
+</demo-block>
+
+<demo-block title="禁用状态" padding>
+  <fbm-radio-group
+    disabled
+    value="{{ radio2 }}"
+    data-key="radio2"
+    bind:change="onChange"
+  >
+    <fbm-radio name="1" custom-class="demo-radio">单选框 1</fbm-radio>
+    <fbm-radio name="2">单选框 2</fbm-radio>
+  </fbm-radio-group>
+</demo-block>
+
+<demo-block title="自定义形状" padding>
+  <fbm-radio-group
+    value="{{ radioShape }}"
+    data-key="radioShape"
+    bind:change="onChange"
+  >
+    <fbm-radio name="1" shape="square" custom-class="demo-radio"
+    >单选框</fbm-radio
+    >
+    <fbm-radio name="2" shape="square">单选框</fbm-radio>
+  </fbm-radio-group>
+</demo-block>
+
+<demo-block title="自定义颜色" padding>
+  <fbm-radio-group
+    value="{{ radio3 }}"
+    data-key="radio3"
+    bind:change="onChange"
+  >
+    <fbm-radio name="1" custom-class="demo-radio" checked-color="#07c160"
+    >单选框</fbm-radio
+    >
+    <fbm-radio name="2" checked-color="#07c160">单选框</fbm-radio>
+  </fbm-radio-group>
+</demo-block>
+
+<demo-block title="自定义大小" padding>
+  <fbm-radio-group
+    value="{{ radioSize }}"
+    data-key="radioSize"
+    bind:change="onChange"
+  >
+    <fbm-radio name="1" icon-size="24px" custom-class="demo-radio"
+    >单选框</fbm-radio
+    >
+    <fbm-radio name="2" icon-size="24px">单选框</fbm-radio>
+  </fbm-radio-group>
+</demo-block>
+
+<demo-block title="自定义图标" padding>
+  <fbm-radio-group
+    value="{{ radio4 }}"
+    data-key="radio4"
+    bind:change="onChange"
+  >
+    <fbm-radio use-icon-slot name="1">
+      自定义图标
+      <image
+        slot="icon"
+        src="{{ radio4 === '1' ? icon.active : icon.normal }}"
+        class="icon"
+        mode="widthFix"
+      ></image>
+    </fbm-radio>
+    <fbm-radio use-icon-slot name="2">
+      自定义图标
+      <image
+        slot="icon"
+        src="{{ radio4 === '2' ? icon.active : icon.normal }}"
+        class="icon"
+        mode="widthFix"
+      ></image>
+    </fbm-radio>
+  </fbm-radio-group>
+</demo-block>
+
+<demo-block title="禁用文本点击" padding>
+  <fbm-radio-group
+    value="{{ radioLabel }}"
+    data-key="radioLabel"
+    bind:change="onChange"
+  >
+    <fbm-radio label-disabled name="1" custom-class="demo-radio"
+    >单选框 1</fbm-radio
+    >
+    <fbm-radio label-disabled name="2">单选框 2</fbm-radio>
+  </fbm-radio-group>
+</demo-block>
+
+<demo-block title="与 Cell 组件一起使用">
+  <fbm-radio-group value="{{ radio5 }}">
+    <fbm-cell-group>
+      <fbm-cell title="单选框 1" clickable data-name="1" bind:click="onClick">
+        <fbm-radio slot="right-icon" name="1"></fbm-radio>
+      </fbm-cell>
+      <fbm-cell title="单选框 2" clickable data-name="2" bind:click="onClick">
+        <fbm-radio slot="right-icon" name="2"></fbm-radio>
+      </fbm-cell>
+    </fbm-cell-group>
+  </fbm-radio-group>
+</demo-block>

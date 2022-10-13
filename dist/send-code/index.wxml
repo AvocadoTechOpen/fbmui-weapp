@@ -1,0 +1,27 @@
+<wxs src="../wxs/utils.wxs" module="utils" />
+<view class="fbm-send-code custom-class">
+  <fbm-cell-group>
+    <view class="phone-block">
+      <view class="county-code-block">
+        <view>+{{ phoneCountyCode }}</view>
+        <van-icon name="arrow-down" color="RGBA(0, 0, 0, 0.3)" size="10px" />
+      </view>
+      <fbm-field
+        value="{{ phone }}"
+        placeholder="{{ phonePlaceholder }}"
+        clearable
+        bind:change="onPhoneChange"
+      />
+    </view>
+    <fbm-field
+      value="{{ code }}"
+      center
+      clearable
+      label="{{ codeLabel }}"
+      placeholder="{{ codePlaceholder }}"
+      use-button-slot
+    >
+      <fbm-button slot="button" size="small" round color="{{ codeButtonColor }}">{{ codeButtonText }}</fbm-button>
+    </fbm-field>
+  </fbm-cell-group>
+</view>

@@ -272,29 +272,8 @@ export default {
         title: '业务组件',
         items: [
           {
-            path: 'area',
-            title: 'Area 省市区选择',
-          },
-          {
-            path: 'card',
-            title: 'Card 商品卡片',
-          },
-          {
-            path: 'submit-bar',
-            title: 'SubmitBar 提交订单栏',
-          },
-          {
-            path: 'goods-action',
-            title: 'GoodsAction 商品导航',
-          },
-        ],
-      },
-      {
-        title: '废弃',
-        items: [
-          {
-            path: 'panel',
-            title: 'Panel 面板',
+            path: 'send-code',
+            title: 'SendCode 发送验证码',
           },
         ],
       },

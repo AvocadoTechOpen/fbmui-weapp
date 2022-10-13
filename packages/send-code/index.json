@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "fbm-button": "../button/index",
+    "fbm-field": "../field/index",
+    "fbm-toast": "../toast/index",
+    "fbm-cell-group": "../cell-group/index",
+    "van-icon": "../icon/index"
+  }
+}

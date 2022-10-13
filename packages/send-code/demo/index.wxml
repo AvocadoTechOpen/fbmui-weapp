@@ -1,0 +1,25 @@
+<demo-block title="基础用法">
+  <fbm-send-code
+    code-disabled="{{ codeDisabled }}"
+  />
+  <fbm-button round color="#4CAF50" disabled="{{btnDisabled}}" block custom-class="demo-center">登录</fbm-button>
+</demo-block>
+
+<demo-block title="自定义属性">
+  <fbm-send-code
+    phone-county-code="886"
+    phone-placeholder="請輸入手機號碼"
+    phone-length="10"
+    code-label="驗證碼"
+    code-disabled="{{ codeDisabled }}"
+    code-length="5"
+    code-placeholder="請輸入驗證碼"
+    code-button-color="#6900FF"
+    bind:selectcode="onSelectCode"
+    bind:sendcode="onSendCode"
+    bind:complete="onComplete"
+  />
+  <fbm-button round color="#6900FF" disabled="{{btnDisabled}}" block custom-class="demo-center">登录</fbm-button>
+</demo-block>
+
+<fbm-toast id="fbm-toast" />

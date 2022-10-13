@@ -1,0 +1,70 @@
+# SendCode 发送验证码
+
+### 介绍
+
+用于手机号发送验证码。
+
+### 引入
+
+在`app.json`或`index.json`中引入组件，详细介绍见[快速上手](#/quickstart#yin-ru-zu-jian)。
+
+```json
+"usingComponents": {
+  "fbm-send-code": "fbmui-weapp/send-code/index"
+}
+```
+
+## 代码演示
+
+### 基础用法
+
+```html
+<fbm-send-code
+  bind:selectcode="onSelectCode"
+  bind:sendcode="onSendCode"
+  bind:complete="onComplete"
+/>
+```
+
+### 自定义属性
+
+```html
+<fbm-send-code
+  phone-county-code="886"
+  phone-placeholder="請輸入手機號碼"
+  phone-length="10"
+  code-label="驗證碼"
+  code-length="5"
+  code-placeholder="請輸入驗證碼"
+  code-button-color="#6900FF"
+  bind:selectcode="onSelectCode"
+  bind:sendcode="onSendCode"
+  bind:complete="onComplete"
+/>
+```
+
+## API
+
+### Props
+
+| 参数 | 说明 | 类型 | 默认值 |
+| --- | --- | --- | --- |
+| phone-county-code | 手机号区号默认值 | _string_ | `86` |
+| phone-placeholder | 手机号输入框为空时占位符 | _string_ | `请输入手机号码` |
+| phone-length | 手机号长度 | _number_ | `11` |
+| code-placeholder | 验证码输入框为空时占位符 | _string_ | `请输入验证码` |
+| code-label | 验证码输入框左侧文本 | _string_ | `验证码` |
+| code-length | 验证码长度 | _number_ | `4` |
+| code-button-text | 发送验证码按钮文本内容 | _string_ | `获取验证码` |
+| code-countdown-text | 验证码倒计时文本内容 | _string_ | `s后重新发送` |
+| code-button-color | 发送验证码按钮激活状态的颜色 | _string_ | `#4CAF50` |
+| code-disabled | 显示验证码倒计时 | _boolean_ | `false` |
+
+### Events
+
+| 事件名 | 说明             | 参数 |
+| ------ | ---------------- | ---- |
+| bind:selectcode | 选择区号时触发 | - |
+| bind:phoneblur | 手机号输入框失去焦点时触发 | event.detail = { phone: phone, countryCode: countryCode } |
+| bind:sendcode | 点击发送验证码按钮时触发 | event.detail = { phone: phone, countryCode: countryCode } |
+| bind:complete | 手机号和验证码输入完成时触发 | event.detail = { phone: phone, countryCode: countryCode, code: code } |

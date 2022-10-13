@@ -1,5 +1,15 @@
 export default [
   {
+    groupName: '业务组件',
+    icon: 'ellipsis',
+    list: [
+      {
+        path: '/send-code',
+        title: 'SendCode 发送验证码',
+      },
+    ],
+  },
+  {
     groupName: '基础组件',
     icon: 'https://img.yzcdn.cn/vant/basic-0401.svg',
     list: [
@@ -218,28 +228,6 @@ export default [
       {
         path: '/tabbar',
         title: 'Tabbar 标签栏',
-      },
-    ],
-  },
-  {
-    groupName: '业务组件',
-    icon: 'ellipsis',
-    list: [
-      {
-        path: '/area',
-        title: 'Area 省市区选择',
-      },
-      {
-        path: '/card',
-        title: 'Card 商品卡片',
-      },
-      {
-        path: '/submit-bar',
-        title: 'SubmitBar 提交订单栏',
-      },
-      {
-        path: '/goods-action',
-        title: 'GoodsAction 商品导航',
       },
     ],
   },

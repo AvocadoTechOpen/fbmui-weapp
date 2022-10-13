@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "fbm-button": "../../button/index",
+    "fbm-toast": "../../toast/index",
+    "fbm-send-code": "../../send-code/index",
+    "demo-block": "../../../example/components/demo-block/index"
+  }
+}

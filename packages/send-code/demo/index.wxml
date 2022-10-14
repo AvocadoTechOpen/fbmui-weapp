@@ -1,6 +1,9 @@
 <demo-block title="基础用法">
   <fbm-send-code
     code-disabled="{{ codeDisabled }}"
+    bind:select-countycode="onSelectCode"
+    bind:send-code="onSendCode"
+    bind:input-code="onComplete"
   />
   <fbm-button round color="#4CAF50" disabled="{{btnDisabled}}" block custom-class="demo-center">登录</fbm-button>
 </demo-block>
@@ -9,17 +12,16 @@
   <fbm-send-code
     phone-county-code="886"
     phone-placeholder="請輸入手機號碼"
-    phone-length="10"
     code-label="驗證碼"
-    code-disabled="{{ codeDisabled }}"
+    code-disabled="{{ codeDisabled1 }}"
     code-length="5"
     code-placeholder="請輸入驗證碼"
     code-button-color="#6900FF"
-    bind:selectcode="onSelectCode"
-    bind:sendcode="onSendCode"
-    bind:complete="onComplete"
+    bind:select-countycode="onSelectCode"
+    bind:send-code="onSendCode"
+    bind:input-code="onComplete"
   />
-  <fbm-button round color="#6900FF" disabled="{{btnDisabled}}" block custom-class="demo-center">登录</fbm-button>
+  <fbm-button round color="#6900FF" disabled="{{btnDisabled1}}" block custom-class="demo-center">登录</fbm-button>
 </demo-block>
 
 <fbm-toast id="fbm-toast" />

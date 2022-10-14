@@ -1,27 +1,36 @@
 <wxs src="../wxs/utils.wxs" module="utils" />
+
 <view class="fbm-send-code custom-class">
   <fbm-cell-group>
-    <view class="phone-block">
-      <view class="county-code-block">
-        <view>+{{ phoneCountyCode }}</view>
-        <van-icon name="arrow-down" color="RGBA(0, 0, 0, 0.3)" size="10px" />
+    <fbm-field
+      value="{{ phone }}"
+      placeholder="{{ phonePlaceholder }}"
+      clearable
+      type="number"
+      maxlength="{{ phoneMaxLength }}"
+      bind:change="onPhoneChange"
+    >
+      <view slot="label">
+        <view class="fbm-send-code__county-code-block" bindtap="onCountyCodeClick">
+          <view>+{{ phoneCountyCode }}</view>
+          <van-icon name="arrow-down" color="rgba(0, 0, 0, 0.3)" size="10px" />
+        </view>
       </view>
-      <fbm-field
-        value="{{ phone }}"
-        placeholder="{{ phonePlaceholder }}"
-        clearable
-        bind:change="onPhoneChange"
-      />
-    </view>
+    </fbm-field>
     <fbm-field
       value="{{ code }}"
       center
       clearable
+      type="number"
+      maxlength="{{ codeLength }}"
       label="{{ codeLabel }}"
       placeholder="{{ codePlaceholder }}"
       use-button-slot
+      bind:change="onCodeChange"
     >
-      <fbm-button slot="button" size="small" round color="{{ codeButtonColor }}">{{ codeButtonText }}</fbm-button>
+      <fbm-button wx:if="{{ !codeDisabled }}" slot="button" size="small" plain round color="{{ codeButtonColor }}" bind:click="onSendCode">{{ codeButtonText }}</fbm-button>
+      <fbm-button wx:else slot="button" size="small" custom-style="border:none;color:rgba(0, 0, 0, 0.3)">{{ codeCountdownNum }}{{codeCountdownText}}</fbm-button>
     </fbm-field>
   </fbm-cell-group>
 </view>
+<fbm-toast id="fbm-toast" />

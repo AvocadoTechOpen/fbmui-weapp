@@ -7,7 +7,7 @@
       placeholder="{{ phonePlaceholder }}"
       clearable
       type="number"
-      maxlength="{{ phoneLength }}"
+      maxlength="{{ phoneMaxLength }}"
       bind:change="onPhoneChange"
     >
       <view slot="label">

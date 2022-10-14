@@ -1,1 +1,1 @@
-@import '../common/index.wxss';.fbm-send-code .county-code-block,.fbm-send-code .phone-block{align-items:center;display:flex}
+@import '../common/index.wxss';.fbm-send-code__county-code-block{align-items:center;border-right:1px solid #ebedf0;display:flex;justify-content:space-between;padding-right:8px}

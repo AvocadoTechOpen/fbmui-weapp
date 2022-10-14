@@ -1,9 +1,12 @@
 import { VantComponent } from '../common/component';
+import Toast from '../toast/toast';
+import { GLOBALPHONE } from './utils';
 
 VantComponent({
   data: {
     phone: '',
     code: '',
+    phoneMaxLength: 11,
     duration: 60,
     codeCountdownNum: 60,
     titleWidth: '6.2em',
@@ -17,10 +20,6 @@ VantComponent({
     phonePlaceholder: {
       type: String,
       value: '请输入手机号码',
-    },
-    phoneLength: {
-      type: Number,
-      value: 11,
     },
     codeLabel: {
       type: String,
@@ -59,7 +58,7 @@ VantComponent({
 
   methods: {
     onCountyCodeClick() {
-      this.$emit('selectcode');
+      this.$emit('select-countycode');
     },
     onPhoneChange(event) {
       this.setData({
@@ -67,8 +66,19 @@ VantComponent({
       });
     },
     onSendCode() {
-      this.$emit('sendcode', {
-        phone: this.data.phone,
+      const { phone, phoneCountyCode } = this.data;
+      const phonePass =
+        phoneCountyCode === '86' ? GLOBALPHONE('zh-CN', phone) : phone !== '';
+
+      if (!phonePass) {
+        Toast({
+          context: this,
+          message: '请填写正确的手机号',
+        });
+        return;
+      }
+      this.$emit('send-code', {
+        phone,
       });
     },
     setCode(value: boolean, old: boolean) {
@@ -107,9 +117,12 @@ VantComponent({
       }
     },
     onCodeChange(event: WechatMiniprogram.CustomEvent) {
-      this.$emit('complete', {
-        code: event.detail,
-        phone: this.data.phone,
+      const code = event.detail;
+      const { codeLength, phone } = this.data;
+      this.$emit('input-code', {
+        finish: code.length === codeLength && phone !== '',
+        code,
+        phone,
       });
     },
   },

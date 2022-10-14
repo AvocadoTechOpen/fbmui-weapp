@@ -51,7 +51,6 @@
 | --- | --- | --- | --- |
 | phone-county-code | 手机号区号默认值 | _string_ | `86` |
 | phone-placeholder | 手机号输入框为空时占位符 | _string_ | `请输入手机号码` |
-| phone-length | 手机号长度 | _number_ | `11` |
 | code-placeholder | 验证码输入框为空时占位符 | _string_ | `请输入验证码` |
 | code-label | 验证码输入框左侧文本 | _string_ | `验证码` |
 | code-length | 验证码长度 | _number_ | `4` |
@@ -64,7 +63,6 @@
 
 | 事件名 | 说明             | 参数 |
 | ------ | ---------------- | ---- |
-| bind:selectcode | 选择区号时触发 | - |
-| bind:phoneblur | 手机号输入框失去焦点时触发 | event.detail = { phone: phone, countryCode: countryCode } |
-| bind:sendcode | 点击发送验证码按钮时触发 | event.detail = { phone: phone, countryCode: countryCode } |
-| bind:complete | 手机号和验证码输入完成时触发 | event.detail = { phone: phone, countryCode: countryCode, code: code } |
+| bind:select-countycode | 选择区号时触发 | - |
+| bind:send-code | 点击发送验证码按钮时触发 | event.detail = { phone: phone } |
+| bind:input-code | 验证码输入时触发 | event.detail = { finish: boolean, phone: phone, code: code } |

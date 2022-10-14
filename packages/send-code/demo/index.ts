@@ -3,18 +3,20 @@ import Toast from '../../toast/toast';
 
 VantComponent({
   data: {
+    codeDisabled1: false,
+    btnDisabled1: true,
     codeDisabled: false,
     btnDisabled: true,
   },
   methods: {
-    onSelectCode(event: WechatMiniprogram.CustomEvent) {
+    onSelectCode(event) {
       console.log(event);
       Toast({
         context: this,
         message: '选择区号',
       });
     },
-    onSendCode(event: WechatMiniprogram.CustomEvent) {
+    onSendCode(event) {
       console.log(event);
       Toast({
         context: this,
@@ -24,18 +26,18 @@ VantComponent({
         codeDisabled: true,
       });
     },
-    onComplete(event: WechatMiniprogram.CustomEvent) {
+    onComplete(event) {
       console.log(event);
-      const { value } = event.detail;
-      if (value) {
+      const { finish } = event.detail;
+      if (finish) {
         Toast({
           context: this,
           message: '输入完成',
         });
-        this.setData({
-          btnDisabled: false,
-        });
       }
+      this.setData({
+        btnDisabled: !finish,
+      });
     },
   },
 });

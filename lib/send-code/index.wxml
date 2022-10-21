@@ -13,7 +13,7 @@
       <view slot="label">
         <view class="fbm-send-code__county-code-block" bindtap="onCountyCodeClick">
           <view>+{{ phoneCountyCode }}</view>
-          <van-icon name="arrow-down" color="rgba(0, 0, 0, 0.3)" size="10px" />
+          <van-icon name="arrow-down" color="rgba(0, 0, 0, 0.3)" size="16px" />
         </view>
       </view>
     </fbm-field>

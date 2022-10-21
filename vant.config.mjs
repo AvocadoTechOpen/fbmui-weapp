@@ -275,6 +275,10 @@ export default {
             path: 'send-code',
             title: 'SendCode 发送验证码',
           },
+          {
+            path: 'select-county-code',
+            title: 'SelectCountyCode 选择手机号区号',
+          },
         ],
       },
     ],

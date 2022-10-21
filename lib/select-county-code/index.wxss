@@ -1,0 +1,1 @@
+@import '../common/index.wxss';.select-countycode{position:relative}.select-countycode .title{background:#fff;box-sizing:border-box;color:rgba(0,0,0,.9);font-size:20px;font-weight:500;padding-left:12px;padding-top:12px;width:100%}.select-countycode .sticky-class{background:#fff;height:94px}.select-countycode .cell-pr{padding-right:16px}

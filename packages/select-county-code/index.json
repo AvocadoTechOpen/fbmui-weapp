@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "fbm-sticky": "../sticky/index",
+    "fbm-search": "../search/index",
+    "fbm-cell": "../cell/index",
+    "fbm-index-bar": "../index-bar/index",
+    "fbm-index-anchor": "../index-anchor/index"
+  }
+}

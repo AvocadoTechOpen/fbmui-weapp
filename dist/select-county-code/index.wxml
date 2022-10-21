@@ -1,0 +1,66 @@
+<view class="select-countycode">
+  <fbm-sticky custom-class="sticky-class">
+    <view class="sticky-class">
+      <view class="title">选择国家/地区</view>
+      <fbm-search
+        shape="round"
+        model:value="{{ value }}"
+        placeholder="请输入国家或者地区名查询"
+        bind:change="onChange"
+        bind:search="onSearch"
+      />
+    </view>
+  </fbm-sticky>
+  <view wx:if="{{showResult}}" class="search-results">
+    <block wx:if="{{areaList.length>0}}">
+      <fbm-cell
+        wx:for="{{areaList}}"
+        wx:key="index"
+        wx:for-item="area"
+        data-value="{{area}}"
+        title="{{area.area}}"
+        value="+{{area.val}}"
+        value-class="cell-pr"
+        bindtap="countySelect"
+      />
+    </block>
+    <fbm-cell
+      wx:else
+      title="暂无结果" 
+      value=""
+      value-class="cell-pr"
+    />
+  </view>
+  <fbm-index-bar
+    wx:else
+    index-list="{{ areaMapIndexList }}"
+    sticky-offset-top="94"
+    sticky="{{true}}"
+    scroll-top="{{ scrollTop }}"
+  >
+    <view
+      wx:for="{{ areaMap }}"
+      wx:key="index"
+      wx:for-item="item"
+    >
+      <fbm-index-anchor
+        use-slot
+        index="{{ item.group }}"
+      >
+        <text>{{ item.group }}</text>
+      </fbm-index-anchor>
+      <fbm-cell
+        wx:for="{{ item.children }}"
+        wx:key="index"
+        wx:for-item="area"
+        data-value="{{area}}"
+        title="{{area.area}}"
+        value="+{{area.val}}" 
+        value-class="cell-pr"
+        bindtap="countySelect"
+      />
+    </view>
+  </fbm-index-bar>
+</view>
+
+

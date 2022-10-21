@@ -52,7 +52,8 @@
     "pages/calendar/index",
     "pages/share-sheet/index",
     "pages/config-provider/index",
-    "pages/send-code/index"
+    "pages/send-code/index",
+    "pages/select-county-code/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#f8f8f8",
@@ -64,6 +65,7 @@
   "usingComponents": {
     "demo-block": "./components/demo-block/index",
     "fbm-send-code-demo": "./dist/send-code/demo/index",
+    "fbm-select-county-code-demo": "./dist/select-county-code/demo/index",
     "fbm-action-sheet-demo": "./dist/action-sheet/demo/index",
     "fbm-area-demo": "./dist/area/demo/index",
     "fbm-button-demo": "./dist/button/demo/index",

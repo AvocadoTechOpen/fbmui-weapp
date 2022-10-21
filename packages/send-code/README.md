@@ -20,9 +20,9 @@
 
 ```html
 <fbm-send-code
-  bind:selectcode="onSelectCode"
-  bind:sendcode="onSendCode"
-  bind:complete="onComplete"
+  bind:select-countycode="onSelectCode"
+  bind:send-code="onSendCode"
+  bind:input-code="onComplete"
 />
 ```
 
@@ -37,9 +37,9 @@
   code-length="5"
   code-placeholder="請輸入驗證碼"
   code-button-color="#6900FF"
-  bind:selectcode="onSelectCode"
-  bind:sendcode="onSendCode"
-  bind:complete="onComplete"
+  bind:select-countycode="onSelectCode"
+  bind:send-code="onSendCode"
+  bind:input-code="onComplete"
 />
 ```
 

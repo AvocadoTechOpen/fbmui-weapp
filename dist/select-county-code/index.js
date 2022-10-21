@@ -25,6 +25,23 @@ VantComponent({
         showResult: false,
     },
     methods: {
+        onChange(e) {
+            console.log(e.detail);
+            this.setFilterList(e.detail);
+        },
+        setFilterList(val) {
+            const filterAreaList = areaList.filter((ele) => ele.area.indexOf(val) > -1);
+            this.setData({
+                areaList: val ? filterAreaList : areaList,
+                showResult: val !== '',
+            });
+        },
+        onSearch() {
+            if (this.data.value) {
+                console.log(this.data.value);
+                this.setFilterList(this.data.value);
+            }
+        },
         countySelect(e) {
             const { area, key, val } = e.target.dataset.value;
             wx.showToast({

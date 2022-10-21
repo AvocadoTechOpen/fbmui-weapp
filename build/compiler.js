@@ -113,7 +113,8 @@ const staticCopier = (dist) =>
   gulp.parallel(
     copier(dist, 'wxml'),
     copier(dist, 'wxs'),
-    copier(dist, 'json')
+    copier(dist, 'json'),
+    copier(dist, 'js')
   );
 
 const cleaner = (path) =>

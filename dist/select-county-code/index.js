@@ -32,7 +32,9 @@ VantComponent({
                 icon: 'none',
             });
             this.$emit('select', {
-                area, key, val
+                area,
+                key,
+                val,
             });
         },
     },

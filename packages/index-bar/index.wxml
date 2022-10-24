@@ -13,7 +13,7 @@
       wx:for="{{ indexList }}"
       wx:key="index"
       class="fbm-index-bar__index"
-      style="z-index: {{ zIndex + 1 }}; color: {{ activeAnchorIndex === index ? highlightColor : '' }}"
+      style="z-index: {{ zIndex + 1 }}; color: {{ activeAnchorIndex === index ? highlightColor : '#576B95' }}"
       data-index="{{ index }}"
     >
       {{ item }}

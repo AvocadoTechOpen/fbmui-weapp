@@ -1,7 +1,7 @@
 // Color Palette
 @black: #000;
 @white: #fff;
-@gray-1: #f7f8fa;
+@gray-1: #f3f4f5;
 @gray-2: #f2f3f5;
 @gray-3: #ebedf0;
 @gray-4: #dcdee0;
@@ -42,6 +42,7 @@
 @font-size-sm: 12px;
 @font-size-md: 14px;
 @font-size-lg: 16px;
+@font-size-wx: 17px;
 @font-weight-bold: 500;
 @line-height-xs: 14px;
 @line-height-sm: 18px;
@@ -95,7 +96,8 @@
 @button-small-font-size: @font-size-sm;
 @button-small-min-width: 60px;
 @button-normal-font-size: @font-size-md;
-@button-large-height: 50px;
+@button-large-height: 48px;
+@button-large-font-size: @font-size-wx;
 @button-default-color: @text-color;
 @button-default-height: 44px;
 @button-default-font-size: @font-size-lg;
@@ -166,9 +168,9 @@
 @card-price-font-family: @price-integer-font-family;
 
 // Cell
-@cell-font-size: @font-size-md;
+@cell-font-size: @font-size-wx;
 @cell-line-height: 24px;
-@cell-vertical-padding: 10px;
+@cell-vertical-padding: @padding-md;
 @cell-horizontal-padding: @padding-md;
 @cell-text-color: @text-color;
 @cell-background-color: @white;
@@ -186,6 +188,10 @@
 @cell-large-title-font-size: @font-size-lg;
 @cell-large-value-font-size: @font-size-lg;
 @cell-large-label-font-size: @font-size-md;
+@cell-wx-vertical-padding: @padding-md;
+@cell-wx-title-font-size: @font-size-wx;
+@cell-wx-value-font-size: @font-size-wx;
+@cell-wx-label-font-size: @font-size-wx;
 
 // CellGroup
 @cell-group-background-color: @white;
@@ -428,7 +434,7 @@
 
 // Search
 @search-background-color: @gray-1;
-@search-padding: 10px @padding-sm;
+@search-padding: 10px @padding-md;
 @search-input-height: 34px;
 @search-label-padding: 0 5px;
 @search-label-color: @text-color;
@@ -661,8 +667,8 @@
 @index-anchor-active-text-color: @green;
 
 // IndexBar
-@index-bar-index-font-size: @font-size-xs;
-@index-bar-index-line-height: 14px;
+@index-bar-index-font-size: @font-size-sm;
+@index-bar-index-line-height: 18px;
 
 // skeleton
 @skeleton-padding: 0 @padding-md;

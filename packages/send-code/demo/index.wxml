@@ -5,7 +5,7 @@
     bind:send-code="onSendCode"
     bind:input-code="onComplete"
   />
-  <fbm-button round color="#4CAF50" disabled="{{btnDisabled}}" block custom-class="demo-center">登录</fbm-button>
+  <fbm-button size="large" round color="#4CAF50" disabled="{{btnDisabled}}" block custom-class="demo-center">登录</fbm-button>
 </demo-block>
 
 <demo-block title="自定义属性">
@@ -21,7 +21,7 @@
     bind:send-code="onSendCode"
     bind:input-code="onComplete"
   />
-  <fbm-button round color="#6900FF" disabled="{{btnDisabled1}}" block custom-class="demo-center">登录</fbm-button>
+  <fbm-button size="large" round color="#6900FF" disabled="{{btnDisabled1}}" block custom-class="demo-center">登录</fbm-button>
 </demo-block>
 
 <fbm-toast id="fbm-toast" />

@@ -3,10 +3,21 @@
 
 .fbm-send-code {
   &__county-code-block {
+    position: relative;
+    width: 74px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-right: 8px;
-    border-right: @border-width-base solid @border-color;
+    // border-right: @border-width-base solid @border-color;
+    &::after {
+      position: absolute;
+      right: 0;
+      top: -16px;
+      content: '';
+      width: @border-width-base;
+      height: 56px;
+      background-color: @border-color;
+    }
   }
 }

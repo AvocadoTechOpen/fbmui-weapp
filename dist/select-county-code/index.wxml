@@ -17,6 +17,7 @@
         wx:for="{{areaList}}"
         wx:key="index"
         wx:for-item="area"
+        size="wx"
         data-value="{{area}}"
         title="{{area.area}}"
         value="+{{area.val}}"
@@ -26,6 +27,7 @@
     </block>
     <fbm-cell
       wx:else
+      size="wx"
       title="暂无结果" 
       value=""
       value-class="cell-pr"
@@ -53,6 +55,7 @@
         wx:for="{{ item.children }}"
         wx:key="index"
         wx:for-item="area"
+        size="wx"
         data-value="{{area}}"
         title="{{area.area}}"
         value="+{{area.val}}" 

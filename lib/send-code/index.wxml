@@ -1,6 +1,6 @@
 <wxs src="../wxs/utils.wxs" module="utils" />
 
-<view class="fbm-send-code custom-class">
+<view class="fbm-send-code">
   <fbm-cell-group>
     <fbm-field
       value="{{ phone }}"
@@ -28,7 +28,7 @@
       use-button-slot
       bind:change="onCodeChange"
     >
-      <fbm-button wx:if="{{ !codeDisabled }}" slot="button" size="small" plain round color="{{ codeButtonColor }}" bind:click="onSendCode">{{ codeButtonText }}</fbm-button>
+      <fbm-button wx:if="{{ !codeDisabled }}" customClass="btn-send" slot="button" size="small" plain round color="{{ codeButtonColor }}" bind:click="onSendCode">{{ codeButtonText }}</fbm-button>
       <fbm-button wx:else slot="button" size="small" custom-style="border:none;color:rgba(0, 0, 0, 0.3)">{{ codeCountdownNum }}{{codeCountdownText}}</fbm-button>
     </fbm-field>
   </fbm-cell-group>

@@ -21,6 +21,7 @@
 ```html
 <fbm-send-code
   bind:select-countycode="onSelectCode"
+  bind:input-phone="onPhoneChange"
   bind:send-code="onSendCode"
   bind:input-code="onComplete"
 />
@@ -38,6 +39,7 @@
   code-placeholder="請輸入驗證碼"
   code-button-color="#6900FF"
   bind:select-countycode="onSelectCode"
+  bind:input-phone="onPhoneChange"
   bind:send-code="onSendCode"
   bind:input-code="onComplete"
 />
@@ -64,5 +66,6 @@
 | 事件名 | 说明             | 参数 |
 | ------ | ---------------- | ---- |
 | bind:select-countycode | 选择区号时触发 | - |
+| bind:input-phone | 手机号输入时触发 | event.detail = { phone: phone } |
 | bind:send-code | 点击发送验证码按钮时触发 | event.detail = { phone: phone } |
 | bind:input-code | 验证码输入时触发 | event.detail = { finish: boolean, phone: phone, code: code } |

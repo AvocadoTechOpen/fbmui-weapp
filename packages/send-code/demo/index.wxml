@@ -2,6 +2,7 @@
   <fbm-send-code
     code-disabled="{{ codeDisabled }}"
     bind:select-countycode="onSelectCode"
+    bind:input-phone="onPhoneChange"
     bind:send-code="onSendCode"
     bind:input-code="onComplete"
   />
@@ -18,6 +19,7 @@
     code-placeholder="請輸入驗證碼"
     code-button-color="#6900FF"
     bind:select-countycode="onSelectCode"
+    bind:input-phone="onPhoneChange"
     bind:send-code="onSendCode"
     bind:input-code="onComplete"
   />

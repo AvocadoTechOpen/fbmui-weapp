@@ -64,6 +64,9 @@ VantComponent({
       this.setData({
         phone: event.detail,
       });
+      this.$emit('input-phone', {
+        phone: event.detail,
+      });
     },
     onSendCode() {
       const { phone, phoneCountyCode } = this.data;
